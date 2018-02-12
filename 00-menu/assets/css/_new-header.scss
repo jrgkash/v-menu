@@ -1,0 +1,120 @@
+/* nuevo header */
+
+.nav--vivo{
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 10;
+  .vivo--menu {
+    padding: 0;
+    margin: 0 auto;
+
+    .menu--privado{
+      width: 20%;
+      padding: 0px;
+      float: left;
+      button{
+        width: 100%;
+        height: 60px;
+        padding: 0px 0px 10px 0px !important;
+        margin: 0px 0px 0px 0px !important;
+        background: #fff;
+        border-bottom: 2px solid #ccc !important;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        color: #666;
+
+      }
+      .active{
+        background: dodgerblue;
+        color: #fff;
+      }
+
+      p{
+        font-size: 1.2em;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        padding: 5px 0px 0px 0px;
+        margin: 0px;
+
+      }
+      h3{
+        font-size: 1.4em;
+        line-height: 1.4em;
+        text-transform: uppercase;
+          padding: 0px 0px 0px 0px;
+          margin: 0px;
+      }
+
+
+    }
+
+
+    ul {
+      list-style-type: none;
+      padding: 0px 20px;
+      margin: 0px !important;
+        // border-bottom: 2px solid #ccc !important;
+    }
+/*     ul li:nth-child(1) button{
+ background-color: #ccc;
+}
+ul li:nth-child(2) button{
+ background-color: #ccc;
+} */
+    ul li:nth-child(1) .active{
+     background-color: dodgerblue;
+    }
+    ul li:nth-child(2) .active{
+     background-color: rgb(255, 207, 0);
+    }
+    ul li:nth-child(3) .active{
+     background-color: rgb(7, 145, 60);
+    }
+    ul li:nth-child(4) .active{
+     background-color: red;
+    }
+    ul li:nth-child(5) .active{
+     background-color: rgb(40, 38, 34);
+    }
+
+    ul li:nth-child(1) .glyphicon.glyphicon-one-fine-dot{
+     color: dodgerblue;
+    }
+    ul li:nth-child(2) .glyphicon.glyphicon-one-fine-dot{
+     color: rgb(255, 207, 0);
+    }
+    ul li:nth-child(3) .glyphicon.glyphicon-one-fine-dot{
+     color: rgb(7, 145, 60);
+    }
+    ul li:nth-child(4) .glyphicon.glyphicon-one-fine-dot{
+     color: red;
+    }
+    ul li:nth-child(5) .glyphicon.glyphicon-one-fine-dot{
+     color: rgb(40, 38, 34);
+    }
+    .glyphicon.glyphicon-one-fine-dot {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 78%;
+        z-index: 1000;
+    }
+    .glyphicon.glyphicon-one-fine-dot:before {
+        content:"\25cf";
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    li {
+      display: inline;
+
+
+
+
+    }
+
+  }
+
+}

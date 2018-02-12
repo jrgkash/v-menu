@@ -1,0 +1,31 @@
+/*tipografías*/
+@font-face {
+	font-family: 'GothamBold';
+    src: url('assets/fonts/original_Gotham-Bold.eot?#iefix') format('embedded-opentype'), 
+         url('assets/fonts/original_Gotham-Bold.woff') format('woff'),
+         url('assets/fonts/original_Gotham-Bold.ttf') format('truetype'),
+         url('assets/fonts/original_Gotham-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'GothamBook';
+    src: url('assets/fonts/original_Gotham-Book.eot?#iefix') format('embedded-opentype'), 
+         url('assets/fonts/original_Gotham-Book.woff') format('woff'),
+         url('assets/fonts/original_Gotham-Book.ttf') format('truetype'),
+         url('assets/fonts/original_Gotham-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothamMedium';
+    src: url('assets/fonts/original_Gotham-Medium.eot?#iefix') format('embedded-opentype'), 
+         url('assets/fonts/original_Gotham-Medium.woff') format('woff'),
+         url('assets/fonts/original_Gotham-Medium.ttf') format('truetype'),
+         url('assets/fonts/original_Gotham-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
