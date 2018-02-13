@@ -2159,6 +2159,8 @@ md-menu-content._md-menu-bar-menu.md-dense {
         border-right: none;
         border-top: none;
         color: #666; }
+        .nav--vivo .vivo--menu .menu--privado button:focus {
+          outline: none; }
       .nav--vivo .vivo--menu .menu--privado .active {
         border-bottom: 4px solid #0081C9 !important;
         padding: 0px 0px 8px 0px !important; }
@@ -2222,8 +2224,8 @@ md-menu-content._md-menu-bar-menu.md-dense {
       display: inline; }
 
 .nav--menuInterno {
-  margin: 0;
-  padding: 20px 0px 0px 0px;
+  margin: 80px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   position: absolute !important;
   overflow: hidden;
   height: auto;
@@ -2248,7 +2250,10 @@ md-menu-content._md-menu-bar-menu.md-dense {
         padding: 0px 0px 10px 0px !important;
         margin: 0px 0px 0px 0px !important;
         float: left; }
+        .nav--menuInterno .menuInterno--contenedor .conenedor--nav button:focus {
+          outline: none; }
         .nav--menuInterno .menuInterno--contenedor .conenedor--nav button:hover {
+          outline: none;
           color: #fff !important;
           border-bottom: 4px solid #66B9E1 !important;
           padding: 0px 0px 6px 0px !important; }
@@ -2265,8 +2270,11 @@ md-menu-content._md-menu-bar-menu.md-dense {
       .nav--menuInterno .menuInterno--contenedor:nth-child(1) button p {
         color: #B1D8EE; }
 
-.sliderCards {
-  padding: 0;
-  margin: 0; }
+md-sidenav {
+  width: 1000px;
+  max-width: 1000px;
+  padding: 2em; }
+  md-sidenav .asideClose {
+    float: right; }
 
 /*# sourceMappingURL=main.css.map */

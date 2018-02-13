@@ -27,6 +27,10 @@
         border-right: none;
         border-top: none;
         color: #666;
+        &:focus{
+          outline: none;
+
+        }
 
       }
       .active{
@@ -135,8 +139,8 @@
 // estilos internos menu
 
 .nav--menuInterno {
-  margin: 0;
-  padding:  20px 0px 0px 0px;
+  margin: 80px 0px 0px 0px;
+  padding:  0px 0px 0px 0px;
   position: absolute !important;
   overflow: hidden;
   height: auto;
@@ -163,7 +167,12 @@
         padding: 0px 0px 10px 0px !important;
         margin: 0px 0px 0px 0px !important;
         float: left;
+        &:focus{
+          outline: none;
+
+        }
         &:hover{
+          outline: none;
           color: #fff !important;
           border-bottom: 4px solid #66B9E1 !important;
           padding: 0px 0px 6px 0px !important;
@@ -195,10 +204,12 @@
 
 }
 
+md-sidenav {
+  width: 1000px;
+  max-width: 1000px;
+  padding: 2em;
 
-
-.sliderCards{
-  padding: 0;
-  margin: 0;
-
+  .asideClose {
+    float: right;
+  }
 }

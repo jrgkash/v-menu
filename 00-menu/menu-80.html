@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vivo-menu</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="./assets/css/animate.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <!-- dependencias bower-components -->
+  <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" href="./bower_components/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/swiper/dist/js/swiper.js"></script>
+  <script src="./bower_components/angular/angular.js"></script>
+  <script src="./bower_components/angular-aria/angular-aria.js"></script>
+  <script src="./bower_components/angular-animate/angular-animate.js"></script>
+  <script src="./bower_components/angular-material/angular-material.js"></script>
+  <script src="./bower_components/angular-messages/angular-messages.js"></script>
+  <script src="./bower_components/angular-swiper/dist/angular-swiper.js"></script>
+  <!-- dependencias bower-components -->
+  <!-- este archivo tiene los controladores AngularJS -->
+  <script src="./assets/js/controller.js"></script>
+  <!-- este archivo contiene la navegacion -->
+</head>
+
+<body ng-app="myApp">
+  <header>
+    <nav style="height: 50px;">
+    </nav>
+    <!--   menu logeado -->
+    <nav class="nav--vivo">
+      <div class="container" style="outline: solid 1px #eee">
+        <div class="vivo--menu" ng-controller="menuCrtl">
+          <!-- mega menu -->
+          <ul>
+            <li class="menu--privado" >
+              <button  ng-class="{'active': isActive}"
+              ng-click="
+                activeButton();
+                apertura01 = ! apertura01;
+                currentOpen.menuId = false;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;
+                apertura02 = false;
+                apertura03 = false;
+                apertura04 = false;
+                apertura05 = false;"
+              type="button">
+                <p>option</p>
+                <h3>test</h3>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado" >
+              <button  ng-class="{'active': isActive2}"
+              ng-click="
+                activeButton2();
+                apertura02 = ! apertura02;
+                currentOpen.menuId = false;
+                isActive= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;
+                apertura01 = false;
+                apertura03 = false;
+                apertura04 = false;
+                apertura05 = false;"
+              type="button">
+                <p>option</p>
+                <h3>test</h3>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado" >
+              <button  ng-class="{'active': isActive3}"
+              ng-click="
+                activeButton3();
+                apertura03 = ! apertura03;
+                currentOpen.menuId = false;
+                isActive= null;
+                isActive2= null;
+                isActive4= null;
+                isActive5= null;
+                apertura01 = false;
+                apertura02 = false;
+                apertura04 = false;
+                apertura05 = false;"
+              type="button">
+                <p>option</p>
+                <h3>test</h3>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado" >
+              <button  ng-class="{'active': isActive4}"
+              ng-click="
+                activeButton4();
+                apertura04 = ! apertura04;
+                currentOpen.menuId = false;
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive5= null;
+                apertura01 = false;
+                apertura02 = false;
+                apertura03 = false;
+                apertura05 = false;"
+              type="button">
+                <p>option</p>
+                <h3>test</h3>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado" >
+              <button  ng-class="{'active': isActive5}"
+              ng-click="
+                activeButton5();
+                apertura05 = ! apertura05;
+                currentOpen.menuId = false;
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                apertura01 = false;
+                apertura02 = false;
+                apertura03 = false;
+                apertura04 = false;"
+              type="button">
+                <p>option</p>
+                <h3>test</h3>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+          </ul>
+          </ul>
+          <div class="nav--menuInterno " ng-show="apertura01" ng-cloak>
+            <div class="menuInterno--contenedor"  ng-mouseleave="apertura01 = false; isActive= null; ">
+              <div class="conenedor--nav">
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="nav--menuInterno " ng-show="apertura02" ng-cloak>
+            <div class="menuInterno--contenedor"  ng-mouseleave="apertura02 = false; isActive2= null; ">
+              <div class="conenedor--nav">
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav--menuInterno " ng-show="apertura03" ng-cloak>
+            <div class="menuInterno--contenedor"  ng-mouseleave="apertura03 = false; isActive3 = false; ">
+              <div class="conenedor--nav">
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="nav--menuInterno " ng-show="apertura04" ng-cloak>
+            <div class="menuInterno--contenedor"  ng-mouseleave="apertura04 = false; isActive4 = false; ">
+              <div class="conenedor--nav">
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="nav--menuInterno " ng-show="apertura05" ng-cloak>
+            <div class="menuInterno--contenedor"  ng-mouseleave="apertura05 = false; isActive5 = false; ">
+              <div class="conenedor--nav">
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+                <button >
+                  <p>Option</p>
+                  <p>Test</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--FIN TAG mega menu jorge 23/08 -->
+    </nav>
+    <!--   menu logeado -->
+  </header>
+  <section style="margin-top: 100px">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
