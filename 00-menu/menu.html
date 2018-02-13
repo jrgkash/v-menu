@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap-theme.css">
   <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
   <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
   <script src="./bower_components/swiper/dist/js/swiper.js"></script>
   <script src="./bower_components/angular/angular.js"></script>
   <script src="./bower_components/angular-aria/angular-aria.js"></script>
@@ -29,15 +30,15 @@
 
 <body ng-app="myApp">
   <header>
-    <nav style="height: 90px;">
+    <nav style="height: 50px;">
     </nav>
     <!--   menu logeado -->
     <nav class="nav--vivo">
-      <div class="container">
+      <div class="container" style="outline: solid 1px #eee">
         <div class="vivo--menu" ng-controller="menuCrtl">
           <!-- mega menu -->
           <ul>
-            <li class="menu--privado " >
+            <li class="menu--privado" >
               <button  ng-class="{'active': isActive}"
               ng-click="
                 activeButton();
@@ -53,189 +54,49 @@
                 apertura05 = false;"
               type="button">
                 <p>option</p>
-                <h3>
-                  test
-                </h3>
+                <h3>test</h3>
                 <span class="glyphicon glyphicon-one-fine-dot"></span>
               </button>
-            </li>
-            <li class="menu--privado " >
-              <button  ng-class="{'active': isActive2}"
-              ng-click="
-                activeButton2();
-                apertura02 = ! apertura02;
-                currentOpen.menuId = false;
-                isActive= null;
-                isActive3= null;
-                isActive4= null;
-                isActive5= null;
-                apertura01 = false;
-                apertura03 = false;
-                apertura04 = false;
-                apertura05 = false;"
-              type="button">
-                <p>option</p>
-                <h3>
-                  test
-                </h3>
-                <span class="glyphicon glyphicon-one-fine-dot"></span>
-              </button>
-            </li>
-            <li class="menu--privado " >
-              <button  ng-class="{'active': isActive3}"
-              ng-click="
-                activeButton3();
-                apertura03 = ! apertura03;
-                currentOpen.menuId = false;
-                isActive= null;
-                isActive2= null;
-                isActive4= null;
-                isActive5= null;
-                apertura01 = false;
-                apertura02 = false;
-                apertura04 = false;
-                apertura05 = false;"
-              type="button">
-                <p>option</p>
-                <h3>
-                  test
-                </h3>
-                <span class="glyphicon glyphicon-one-fine-dot"></span>
-              </button>
-            </li>
-            <li class="menu--privado " >
-              <button  ng-class="{'active': isActive4}"
-              ng-click="
-                activeButton4();
-                apertura04 = ! apertura04;
-                currentOpen.menuId = false;
-                isActive= null;
-                isActive2= null;
-                isActive3= null;
-                isActive5= null;
-                apertura01 = false;
-                apertura02 = false;
-                apertura03 = false;
-                apertura05 = false;"
-              type="button">
-                <p>option</p>
-                <h3>
-                  test
-                </h3>
-                <span class="glyphicon glyphicon-one-fine-dot"></span>
-              </button>
-            </li>
-            <li class="menu--privado " >
-              <button  ng-class="{'active': isActive5}"
-              ng-click="
-                activeButton5();
-                apertura05 = ! apertura05;
-                currentOpen.menuId = false;
-                isActive= null;
-                isActive2= null;
-                isActive3= null;
-                isActive4= null;
-                apertura01 = false;
-                apertura02 = false;
-                apertura03 = false;
-                apertura04 = false;"
-              type="button">
-                <p>option</p>
-                <h3>
-                  test
-                </h3>
-                <span class="glyphicon glyphicon-one-fine-dot"></span>
-              </button>
-            </li>
-            <div class="menuFondo navMenu" ng-show="apertura01">
-              <md-menu-content id="#indicadoreContenedorE" ng-mouseleave="apertura01 = false; isActive= null; ">
-                <div flex="100">
-                  <div layout="row" layout-xs="column">
-                    <div class="col-xs-12  navMenu--contenido menu--padding">
-                      <div class="col-xs-12 col-sm-6 col-md-4">
-                        <md-list class="navMenu--opciones">
-                          <div class="subheader">
-                            <md-list-item ng-href="#">uno</md-list-item>
-                          </div>
-                        </md-list>
-                      </div>
-                    </div>
+              <div class="nav--menuInterno " ng-show="apertura01" ng-cloak>
+                <div class="menuInterno--contenedor"  ng-mouseleave="apertura01 = false; isActive= null; ">
+                  <div class="conenedor--nav">
+                    <button >
+                      <p>Option</p>
+                      <p>Test</p>
+                    </button>
+                    <button >
+                      <p>Option</p>
+                      <p>Test</p>
+
+                    </button>
+                    <button >
+                      <p>Option</p>
+                      <p>Test</p>
+
+                    </button>
+                    <button >
+                      <p>Option</p>
+                      <p>Test</p>
+
+                    </button>
+                    <button >
+                      <p>Option</p>
+                      <p>Test</p>
+
+                    </button>
+                    <button >
+                      <p>Option</p>
+                      <p>Test</p>
+
+                    </button>
+
                   </div>
-                </div>
-              </md-menu-content>
-            </div>
-            <div class="menuFondo navMenu" ng-show="apertura02">
-              <md-menu-content id="#indicadoreContenedorE" ng-mouseleave="apertura02 = false; isActiv2= null; ">
-                <div flex="100">
-                  <div layout="row" layout-xs="column">
-                    <div class="col-xs-12  navMenu--contenido menu--padding">
-                      <div class="col-xs-12 col-sm-6 col-md-4">
-                        <md-list class="navMenu--opciones">
-                          <div class="subheader">
-                            <md-list-item ng-href="#">dos</md-list-item>
-                          </div>
-                        </md-list>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </md-menu-content>
-            </div>
-            <div class="menuFondo navMenu" ng-show="apertura03">
-              <md-menu-content id="#indicadoreContenedorE" ng-mouseleave="apertura03 = false; isActiv3= null; ">
-                <div flex="100">
-                  <div layout="row" layout-xs="column">
-                    <div class="col-xs-12  navMenu--contenido menu--padding">
-                      <div class="col-xs-12 col-sm-6 col-md-4">
-                        <md-list class="navMenu--opciones">
-                          <div class="subheader">
-                            <md-list-item ng-href="#">tres</md-list-item>
-                          </div>
-                        </md-list>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </md-menu-content>
-            </div>
-            <div class="menuFondo navMenu" ng-show="apertura04">
-              <md-menu-content id="#indicadoreContenedorE" ng-mouseleave="apertura04 = false; isActiv4= null; ">
-                <div flex="100">
-                  <div layout="row" layout-xs="column">
-                    <div class="col-xs-12  navMenu--contenido menu--padding">
-                      <div class="col-xs-12 col-sm-6 col-md-4">
-                        <md-list class="navMenu--opciones">
-                          <div class="subheader">
-                            <md-list-item ng-href="#">4</md-list-item>
-                          </div>
-                        </md-list>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </md-menu-content>
-            </div>
-            <div class="menuFondo navMenu" ng-show="apertura05">
-              <md-menu-content id="#indicadoreContenedorE" ng-mouseleave="apertura05 = false; isActiv5= null; ">
-                <div flex="100">
-                  <div layout="row" layout-xs="column">
-                    <div class="col-xs-12  navMenu--contenido menu--padding">
-                      <div class="col-xs-12 col-sm-6 col-md-4">
-                        <md-list class="navMenu--opciones">
-                          <div class="subheader">
-                            <md-list-item ng-href="#">cin5</md-list-item>
-                          </div>
-                        </md-list>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </md-menu-content>
-            </div>
 
 
 
-
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -243,6 +104,126 @@
     </nav>
     <!--   menu logeado -->
   </header>
+  <section style="margin-top: 100px">
+
+
+
+    <!-- <div class="sliderNoticiasRecomendadas" ng-controller="sliderNoticiasRecomendadas">
+        <ks-swiper-container class="sliderCards" override-parameters="noticiasRecomendadas" show-nav-buttons="true">
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado"</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas"</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+          <ks-swiper-slide>
+            <div class="ban-col-md-12">
+              <div class="noticiasRecomendadas h--shadowBox">
+                <h4>ECONOMÍA</h4>
+                <h3>Hacienda: "No es el momento apropiado" para aumentar feriados y vacaciones</h3>
+                <p>Ministro de Hacienda afirmó que no es factible hoy poner "nuevas cargas" al mercado laboral y calculó en US$ 15 millones el impacto fiscal anual.</p>
+                <div class="pin"></div>
+                <a ng-href="#noticias-destacadas" class="linkNoticias"></a>
+              </div>
+            </div>
+          </ks-swiper-slide>
+        </ks-swiper-container>
+      </div> -->
+
+
+
+
+
+
+    <!-- <div class='container '>
+      <div class="row">
+        <div class="col-xs-12">
+          <ks-swiper-container initial-slide="0" loop="false" show-nav-buttons="true" slides-per-view="5" space-between="5" pagination-clickable="true" >
+            <ks-swiper-slide class="swiper-slide">
+                uno
+            </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide" >
+                  DOS
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide" >
+                  TRES
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide" >
+                4
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide" >
+                  5
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide" >
+                  6
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide" >
+                  yuno
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide" >
+                last
+              </ks-swiper-slide>
+          </ks-swiper-container>
+
+        </div>
+      </div>
+
+
+
+    </div> -->
+
+
+
+
+
+
+
+
+
+  </section>
+
+
+
+
+
 </body>
 
 </html>

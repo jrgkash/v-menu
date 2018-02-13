@@ -6,8 +6,11 @@
   transition: all 0.3s ease;
   z-index: 10;
   .vivo--menu {
+    width: 980px;
     padding: 0;
     margin: 0 auto;
+    background: #eee;
+
 
     .menu--privado{
       width: 20%;
@@ -15,7 +18,7 @@
       float: left;
       button{
         width: 100%;
-        height: 60px;
+        height: 67px;
         padding: 0px 0px 10px 0px !important;
         margin: 0px 0px 0px 0px !important;
         background: #fff;
@@ -27,21 +30,23 @@
 
       }
       .active{
-        background: dodgerblue;
-        color: #fff;
+        border-bottom: 4px solid #0081C9 !important;
+          padding: 0px 0px 8px 0px !important;
+
       }
 
+
       p{
-        font-size: 1.2em;
-        line-height: 1.2em;
+        font-size: 1em;
+        line-height: 1em;
         text-transform: uppercase;
-        padding: 5px 0px 0px 0px;
+        padding: 4px 0px 0px 0px;
         margin: 0px;
 
       }
       h3{
-        font-size: 1.4em;
-        line-height: 1.4em;
+        font-size: 1.1252em;
+        line-height: 1.1252em;
         text-transform: uppercase;
           padding: 0px 0px 0px 0px;
           margin: 0px;
@@ -53,46 +58,56 @@
 
     ul {
       list-style-type: none;
-      padding: 0px 20px;
+      padding: 0px;
       margin: 0px !important;
         // border-bottom: 2px solid #ccc !important;
     }
-/*     ul li:nth-child(1) button{
- background-color: #ccc;
-}
-ul li:nth-child(2) button{
- background-color: #ccc;
-} */
+    ul li:nth-child(1) button{
+     border-top: 3px solid #0081C9;
+    }
+    ul li:nth-child(2) button{
+     border-top: 3px solid #FFB718;
+    }
+    ul li:nth-child(3) button{
+     border-top: 3px solid #00AE41;
+    }
+    ul li:nth-child(4) button{
+     border-top: 3px solid #FF4337;
+    }
+    ul li:nth-child(5) button{
+     border-top: 3px solid
+    }
+
     ul li:nth-child(1) .active{
-     background-color: dodgerblue;
+     border-bottom: 4px solid #0081C9 !important;
     }
     ul li:nth-child(2) .active{
-     background-color: rgb(255, 207, 0);
+      border-bottom: 4px solid #FFB718 !important;
     }
     ul li:nth-child(3) .active{
-     background-color: rgb(7, 145, 60);
+      border-bottom: 4px solid #00AE41 !important;
     }
     ul li:nth-child(4) .active{
-     background-color: red;
+     border-bottom: 4px solid #FF4337 !important;
     }
     ul li:nth-child(5) .active{
-     background-color: rgb(40, 38, 34);
+      border-bottom: 4px solid #646469 !important;
     }
 
     ul li:nth-child(1) .glyphicon.glyphicon-one-fine-dot{
-     color: dodgerblue;
+     color:  #0081C9;
     }
     ul li:nth-child(2) .glyphicon.glyphicon-one-fine-dot{
-     color: rgb(255, 207, 0);
+     color:  #FFB718;
     }
     ul li:nth-child(3) .glyphicon.glyphicon-one-fine-dot{
-     color: rgb(7, 145, 60);
+     color: #00AE41;
     }
     ul li:nth-child(4) .glyphicon.glyphicon-one-fine-dot{
-     color: red;
+     color: #FF4337;
     }
     ul li:nth-child(5) .glyphicon.glyphicon-one-fine-dot{
-     color: rgb(40, 38, 34);
+     color: #646469;
     }
     .glyphicon.glyphicon-one-fine-dot {
         position: absolute;
@@ -110,11 +125,80 @@ ul li:nth-child(2) button{
     li {
       display: inline;
 
-
-
-
     }
 
   }
+
+}
+
+
+// estilos internos menu
+
+.nav--menuInterno {
+  margin: 0;
+  padding:  20px 0px 0px 0px;
+  position: absolute !important;
+  overflow: hidden;
+  height: auto;
+  width: 980px;
+  &:nth-child(2) .menuInterno--contenedor{
+    background:  #0081C9 !important;
+  }
+  .menuInterno--contenedor{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 65px;
+    background:  #ccc;
+    .conenedor--nav{
+      margin: 0;
+      padding: 0px 0px;
+
+      button{
+        width: 150px !important;
+        height: 65px;
+        background: #0081C9;
+        border: none;
+        border-bottom: none !important;
+        padding: 0px 0px 10px 0px !important;
+        margin: 0px 0px 0px 0px !important;
+        float: left;
+        &:hover{
+          color: #fff !important;
+          border-bottom: 4px solid #66B9E1 !important;
+          padding: 0px 0px 6px 0px !important;
+          p{
+              color: #fff !important;
+          }
+        }
+      }
+      p{
+        font-size: 1.1252em;
+        line-height: 1em;
+        padding: 5px 0px 0px 0px;
+        margin: 0px;
+        text-transform: none;
+
+      }
+    }
+
+    &:nth-child(1) button{
+      background:  #0081C9;
+      p {
+        color: #B1D8EE;
+      }
+    }
+
+
+
+  }
+
+}
+
+
+
+.sliderCards{
+  padding: 0;
+  margin: 0;
 
 }

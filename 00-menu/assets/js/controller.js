@@ -43,9 +43,33 @@ myApp.controller('menuCrtl', function($scope) {
 
   // controlador menu
 
-
-
-
-
-
 });
+// Slider Noticias recomendadas
+myApp.controller('sliderNoticiasRecomendadas', function($scope, $timeout, $window) {
+  var w = angular.element($window);
+  $scope.noticiasRecomendadas = {
+    slidesPerView: 4,
+   spaceBetween: 30,
+   centeredSlides: true,
+   pagination: {
+     el: '.swiper-pagination',
+     clickable: true,
+   },
+    breakpoints: {
+      767: {
+        slidesPerView: 1,
+        spaceBetween: 1,
+
+      },
+      991: {
+        slidesPerView: 2,
+        spaceBetween: 1,
+      },
+      1199: {
+        slidesPerView: 2,
+        spaceBetween: 1,
+      },
+    }
+  };
+});
+// Fin Slider Noticias recomendadas
