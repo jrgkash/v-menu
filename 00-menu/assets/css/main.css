@@ -113,8 +113,12 @@
     .nav--menuInterno .menuInterno--contenedor .conenedor--nav {
       margin: 0;
       padding: 0px 0px; }
+      .nav--menuInterno .menuInterno--contenedor .conenedor--nav .h--boton {
+        width: 325px !important; }
+        .nav--menuInterno .menuInterno--contenedor .conenedor--nav .h--boton button {
+          width: 325px !important; }
       .nav--menuInterno .menuInterno--contenedor .conenedor--nav button {
-        width: 150px !important;
+        width: 195px;
         height: 65px;
         border: none;
         background: transparent;

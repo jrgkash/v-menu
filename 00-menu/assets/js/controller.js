@@ -77,7 +77,7 @@ myApp.controller('MyCtrl', function($scope) {
 myApp.directive('swiper', function() {
     function main(scope, element, attrs) {
         var swiper = new Swiper(element.get(0), {
-            slidesPerView: 6,
+            slidesPerView: 5,
             centeredSlides: true,
             spaceBetween: 0,
             slideToClickedSlide: true,

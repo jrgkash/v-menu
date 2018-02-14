@@ -170,9 +170,17 @@
       margin: 0;
       padding: 0px 0px;
 
+      .h--boton{
+        width: 325px !important;
+        button{
+          width: 325px !important;
+        }
+
+      }
+
 
       button{
-        width: 150px !important;
+        width: 195px ;
         height: 65px;
         border: none;
         background: transparent;
