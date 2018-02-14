@@ -3,6 +3,14 @@ var myApp = angular.module('myApp', ['ngMaterial', 'ngMessages',  'ngAnimate', '
 
 
 // controlador menu
+// myApp.controller('menuCrtl', function($scope) {
+//
+//
+//
+// });
+
+
+
 myApp.controller('menuCrtl', function($scope) {
   $scope.activo = [];
   $scope.visible = [];
@@ -41,35 +49,62 @@ myApp.controller('menuCrtl', function($scope) {
     $scope.isActive5 = !$scope.isActive5;
   };
 
-  // controlador menu
-
 });
-// Slider Noticias recomendadas
-myApp.controller('sliderNoticiasRecomendadas', function($scope, $timeout, $window) {
-  var w = angular.element($window);
-  $scope.noticiasRecomendadas = {
-    slidesPerView: 4,
-   spaceBetween: 30,
-   centeredSlides: true,
-   pagination: {
-     el: '.swiper-pagination',
-     clickable: true,
-   },
-    breakpoints: {
-      767: {
-        slidesPerView: 1,
-        spaceBetween: 1,
 
-      },
-      991: {
-        slidesPerView: 2,
-        spaceBetween: 1,
-      },
-      1199: {
-        slidesPerView: 2,
-        spaceBetween: 1,
-      },
-    }
+
+myApp.controller('MyController02', function($scope, $mdSidenav) {
+  $scope.openLeftMenu = function() {
+    $mdSidenav('left').toggle();
   };
 });
-// Fin Slider Noticias recomendadas
+
+myApp.controller('MyCtrl', function($scope) {
+    $scope.value = 'one';
+    $scope.values = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
+
+    $scope.changedSlide = function(idx) {
+        $scope.value = $scope.values[idx];
+    };
+
+    $scope.scrolledTo = function(idx) {
+        if(idx != $scope.values.indexOf($scope.value)) {
+            console.log(idx);
+            $scope.value = $scope.values[idx];
+        }
+    };
+});
+
+myApp.directive('swiper', function() {
+    function main(scope, element, attrs) {
+        var swiper = new Swiper(element.get(0), {
+            slidesPerView: 6,
+            centeredSlides: true,
+            spaceBetween: 0,
+            slideToClickedSlide: true,
+            // Events
+            onSlideChangeStart: function(sw) {
+                scope.onSlideChange({
+                    '$index': sw.activeIndex,
+                    '$swiper': sw
+                });
+                scope.$apply();
+            }
+        });
+    }
+
+    return {
+        link: main,
+        scope: {
+            onSlideChange: '&onSlideChange'
+        }
+    };
+});
+
+
+
+
+myApp.controller('expandCollapseCtrl', function ($scope) {
+        $scope.active = true;
+        $scope.active1 = true;
+
+});

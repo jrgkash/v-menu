@@ -2227,11 +2227,18 @@ md-menu-content._md-menu-bar-menu.md-dense {
   margin: 80px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   position: absolute !important;
-  overflow: hidden;
   height: auto;
   width: 980px; }
   .nav--menuInterno:nth-child(2) .menuInterno--contenedor {
     background: #0081C9 !important; }
+  .nav--menuInterno:nth-child(3) .menuInterno--contenedor {
+    background: #FFB718 !important; }
+  .nav--menuInterno:nth-child(4) .menuInterno--contenedor {
+    background: #00AE41 !important; }
+  .nav--menuInterno:nth-child(5) .menuInterno--contenedor {
+    background: #FF4337 !important; }
+  .nav--menuInterno:nth-child(6) .menuInterno--contenedor {
+    background: #646469 !important; }
   .nav--menuInterno .menuInterno--contenedor {
     width: 100%;
     margin: 0;
@@ -2244,8 +2251,9 @@ md-menu-content._md-menu-bar-menu.md-dense {
       .nav--menuInterno .menuInterno--contenedor .conenedor--nav button {
         width: 150px !important;
         height: 65px;
-        background: #0081C9;
         border: none;
+        background: transparent;
+        color: #fff;
         border-bottom: none !important;
         padding: 0px 0px 10px 0px !important;
         margin: 0px 0px 0px 0px !important;
@@ -2255,7 +2263,7 @@ md-menu-content._md-menu-bar-menu.md-dense {
         .nav--menuInterno .menuInterno--contenedor .conenedor--nav button:hover {
           outline: none;
           color: #fff !important;
-          border-bottom: 4px solid #66B9E1 !important;
+          border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
           padding: 0px 0px 6px 0px !important; }
           .nav--menuInterno .menuInterno--contenedor .conenedor--nav button:hover p {
             color: #fff !important; }
@@ -2265,16 +2273,87 @@ md-menu-content._md-menu-bar-menu.md-dense {
         padding: 5px 0px 0px 0px;
         margin: 0px;
         text-transform: none; }
-    .nav--menuInterno .menuInterno--contenedor:nth-child(1) button {
-      background: #0081C9; }
-      .nav--menuInterno .menuInterno--contenedor:nth-child(1) button p {
-        color: #B1D8EE; }
 
-md-sidenav {
-  width: 1000px;
-  max-width: 1000px;
-  padding: 2em; }
-  md-sidenav .asideClose {
-    float: right; }
+/* css colapsable*/
+.contenedor--colapsable {
+  margin-top: 40px; }
+  .contenedor--colapsable .titulo--menu {
+    color: red;
+    padding: 4px 0px 0px 0px; }
+
+.expandcollapse-item {
+  overflow: hidden;
+  border-top: 1px solid #eee; }
+
+.expandcollapse-heading-collapsed {
+  cursor: pointer;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 100000000;
+  background-color: white;
+  border-bottom: 1px solid #eee; }
+  .expandcollapse-heading-collapsed:focus {
+    outline: none; }
+
+.expandcollapse-heading-expanded {
+  cursor: pointer;
+  z-index: 100000000;
+  padding: 10px 15px;
+  position: relative;
+  background-color: white;
+  border-bottom: 1px solid #eee; }
+  .expandcollapse-heading-expanded:focus {
+    outline: none; }
+
+.expandcollapse-item:first-of-type {
+  border-top: 0px; }
+
+.expandcollapse-heading-collapsed > span, .expandcollapse-heading-expanded > span {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  font-size: 20px;
+  line-height: 0px; }
+
+.expand-collapse-content {
+  padding: 20px; }
+
+/*
+animation:*/
+.slideDown {
+  height: 141px;
+  transition: height 0.35s ease;
+  overflow: hidden;
+  position: relative; }
+  .slideDown.ng-hide {
+    height: 0;
+    transition: height 0.35s ease;
+    overflow: hidden;
+    position: relative; }
+  .slideDown.ng-hide-remove {
+    /* remember, the .hg-hide class is added to element
+    when the active class is added causing it to appear
+    as hidden. Therefore set the styling to display=block
+    so that the hide animation is visible */
+    display: block !important; }
+  .slideDown.ng-hide-add {
+    /* remember, the .hg-hide class is added to element
+    when the active class is added causing it to appear
+    as hidden. Therefore set the styling to display=block
+    so that the hide animation is visible */
+    display: block !important;
+    animation-name: hide;
+    -webkit-animation-name: hide;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in; }
+  .slideDown.ng-hide-remove {
+    animation-name: show;
+    -webkit-animation-name: show;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out; }
 
 /*# sourceMappingURL=main.css.map */
