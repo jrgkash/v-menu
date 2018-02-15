@@ -108,3 +108,32 @@ myApp.controller('expandCollapseCtrl', function ($scope) {
         $scope.active1 = true;
 
 });
+
+
+myApp.controller('slide01', function($scope, $timeout, $window) {
+  var w = angular.element($window);
+  $scope.noticiasRecomendadas = {
+    slidesPerView: 3,
+    spaceBetween: 1,
+    paginationClickable: true,
+    effect: 'slide',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    breakpoints: {
+      767: {
+        slidesPerView: 1,
+        spaceBetween: 1,
+
+      },
+      991: {
+        slidesPerView: 2,
+        spaceBetween: 1,
+      },
+      1199: {
+        slidesPerView: 2,
+        spaceBetween: 1,
+      },
+    }
+  };
+
+});
