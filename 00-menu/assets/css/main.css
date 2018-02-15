@@ -29,12 +29,35 @@
       .nav--vivo .vivo--menu .menu--privado .active {
         border-bottom: 4px solid #0081C9 !important;
         padding: 0px 0px 8px 0px !important; }
+      .nav--vivo .vivo--menu .menu--privado .active--menuAzul {
+        border-bottom: 4px solid #0081C9  !important;
+        padding: 0px 0px 8px 0px !important; }
+      .nav--vivo .vivo--menu .menu--privado .active--menuAmarillo {
+        border-bottom: 4px solid #FFB718 !important;
+        padding: 0px 0px 8px 0px !important; }
+      .nav--vivo .vivo--menu .menu--privado .active--menuVerde {
+        border-bottom: 4px solid #00AE41  !important;
+        padding: 0px 0px 8px 0px !important; }
+      .nav--vivo .vivo--menu .menu--privado .active--menuRojo {
+        border-bottom: 4px solid #FF4337 !important;
+        padding: 0px 0px 8px 0px !important; }
+      .nav--vivo .vivo--menu .menu--privado .active--menuGris {
+        border-bottom: 4px solid #646469   !important;
+        padding: 0px 0px 8px 0px !important; }
       .nav--vivo .vivo--menu .menu--privado p {
         font-size: 1em;
         line-height: 1em;
         text-transform: uppercase;
         padding: 4px 0px 0px 0px;
-        margin: 0px; }
+        margin: 0px auto;
+        width: 50%; }
+        .nav--vivo .vivo--menu .menu--privado p span {
+          font-size: 1.1252em;
+          line-height: 1.1252em;
+          text-transform: uppercase;
+          padding: 0px 0px 0px 0px;
+          margin: 0px;
+          font-weight: 600; }
       .nav--vivo .vivo--menu .menu--privado h3 {
         font-size: 1.1252em;
         line-height: 1.1252em;
@@ -54,7 +77,7 @@
     .nav--vivo .vivo--menu ul li:nth-child(4) button {
       border-top: 3px solid #FF4337; }
     .nav--vivo .vivo--menu ul li:nth-child(5) button {
-      border-top: 3px solid; }
+      border-top: 3px solid #646469; }
     .nav--vivo .vivo--menu ul li:nth-child(1) .active {
       border-bottom: 4px solid #0081C9 !important; }
     .nav--vivo .vivo--menu ul li:nth-child(2) .active {
@@ -88,6 +111,341 @@
     .nav--vivo .vivo--menu li {
       display: inline; }
 
+.nav--menuInternoUno {
+  margin: 20px auto;
+  padding: 0px 0px 0px 0px;
+  height: auto;
+  width: 980px; }
+  .nav--menuInternoUno .menuInterno--contenedor {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 65px;
+    background: #0081C9 !important; }
+    .nav--menuInternoUno .menuInterno--contenedor ks-swiper-slide {
+      width: 195px !important; }
+    .nav--menuInternoUno .menuInterno--contenedor button {
+      width: 195px;
+      height: 65px;
+      border: none;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 0px 0px 10px 0px !important;
+      margin: 0px 0px 0px 0px !important;
+      float: left; }
+      .nav--menuInternoUno .menuInterno--contenedor button:focus {
+        outline: none; }
+      .nav--menuInternoUno .menuInterno--contenedor button:hover {
+        outline: none;
+        color: #fff !important;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+        padding: 0px 0px 6px 0px !important; }
+        .nav--menuInternoUno .menuInterno--contenedor button:hover p {
+          color: #fff !important; }
+      .nav--menuInternoUno .menuInterno--contenedor button .glyphicon.glyphicon-one-fine-dot {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 30%;
+        right: -5px;
+        z-index: 1000;
+        color: rgba(255, 255, 255, 0.7); }
+      .nav--menuInternoUno .menuInterno--contenedor button .glyphicon.glyphicon-one-fine-dot:before {
+        content: "\25cf";
+        font-size: 0.8em;
+        line-height: 0.8em; }
+    .nav--menuInternoUno .menuInterno--contenedor .activo {
+      outline: none;
+      color: #fff !important;
+      border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+      padding: 0px 0px 6px 0px !important; }
+      .nav--menuInternoUno .menuInterno--contenedor .activo button {
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+        padding: 0px 0px 6px 0px !important; }
+      .nav--menuInternoUno .menuInterno--contenedor .activo p {
+        color: #fff !important; }
+    .nav--menuInternoUno .menuInterno--contenedor .activo-select {
+      width: 195px;
+      position: absolute;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.5) !important;
+      border: none; }
+    .nav--menuInternoUno .menuInterno--contenedor p {
+      font-size: 1.1252em;
+      line-height: 1em;
+      padding: 5px 0px 0px 0px;
+      margin: 0px auto;
+      width: 50%;
+      text-transform: none; }
+
+.nav--menuInternoDos {
+  margin: 20px auto;
+  padding: 0px 0px 0px 0px;
+  height: auto;
+  width: 980px; }
+  .nav--menuInternoDos .menuInterno--contenedor {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 65px;
+    background: #FFB718 !important; }
+    .nav--menuInternoDos .menuInterno--contenedor ks-swiper-slide {
+      width: 195px !important; }
+    .nav--menuInternoDos .menuInterno--contenedor button {
+      width: 195px;
+      height: 65px;
+      border: none;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 0px 0px 10px 0px !important;
+      margin: 0px 0px 0px 0px !important;
+      float: left; }
+      .nav--menuInternoDos .menuInterno--contenedor button:focus {
+        outline: none; }
+      .nav--menuInternoDos .menuInterno--contenedor button:hover {
+        outline: none;
+        color: #fff !important;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+        padding: 0px 0px 6px 0px !important; }
+        .nav--menuInternoDos .menuInterno--contenedor button:hover p {
+          color: #fff !important; }
+      .nav--menuInternoDos .menuInterno--contenedor button .glyphicon.glyphicon-one-fine-dot {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 30%;
+        right: -5px;
+        z-index: 1000;
+        color: rgba(255, 255, 255, 0.7); }
+      .nav--menuInternoDos .menuInterno--contenedor button .glyphicon.glyphicon-one-fine-dot:before {
+        content: "\25cf";
+        font-size: 0.8em;
+        line-height: 0.8em; }
+    .nav--menuInternoDos .menuInterno--contenedor .activo {
+      outline: none;
+      color: #fff !important;
+      border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+      padding: 0px 0px 6px 0px !important; }
+      .nav--menuInternoDos .menuInterno--contenedor .activo button {
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+        padding: 0px 0px 6px 0px !important; }
+      .nav--menuInternoDos .menuInterno--contenedor .activo p {
+        color: #fff !important; }
+    .nav--menuInternoDos .menuInterno--contenedor .activo-select {
+      width: 195px;
+      position: absolute;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.5) !important;
+      border: none; }
+    .nav--menuInternoDos .menuInterno--contenedor p {
+      font-size: 1.1252em;
+      line-height: 1em;
+      padding: 5px 0px 0px 0px;
+      margin: 0px auto;
+      width: 50%;
+      text-transform: none; }
+
+.nav--menuInternoTres {
+  margin: 20px auto;
+  padding: 0px 0px 0px 0px;
+  height: auto;
+  width: 980px; }
+  .nav--menuInternoTres .menuInterno--contenedor {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 65px;
+    background: #00AE41 !important; }
+    .nav--menuInternoTres .menuInterno--contenedor ks-swiper-slide {
+      width: 195px !important; }
+    .nav--menuInternoTres .menuInterno--contenedor button {
+      width: 195px;
+      height: 65px;
+      border: none;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 0px 0px 10px 0px !important;
+      margin: 0px 0px 0px 0px !important;
+      float: left; }
+      .nav--menuInternoTres .menuInterno--contenedor button:focus {
+        outline: none; }
+      .nav--menuInternoTres .menuInterno--contenedor button:hover {
+        outline: none;
+        color: #fff !important;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+        padding: 0px 0px 6px 0px !important; }
+        .nav--menuInternoTres .menuInterno--contenedor button:hover p {
+          color: #fff !important; }
+      .nav--menuInternoTres .menuInterno--contenedor button .glyphicon.glyphicon-one-fine-dot {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 30%;
+        right: -5px;
+        z-index: 1000;
+        color: rgba(255, 255, 255, 0.7); }
+      .nav--menuInternoTres .menuInterno--contenedor button .glyphicon.glyphicon-one-fine-dot:before {
+        content: "\25cf";
+        font-size: 0.8em;
+        line-height: 0.8em; }
+    .nav--menuInternoTres .menuInterno--contenedor .activo {
+      outline: none;
+      color: #fff !important;
+      border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+      padding: 0px 0px 6px 0px !important; }
+      .nav--menuInternoTres .menuInterno--contenedor .activo button {
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+        padding: 0px 0px 6px 0px !important; }
+      .nav--menuInternoTres .menuInterno--contenedor .activo p {
+        color: #fff !important; }
+    .nav--menuInternoTres .menuInterno--contenedor .activo-select {
+      width: 195px;
+      position: absolute;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.5) !important;
+      border: none; }
+    .nav--menuInternoTres .menuInterno--contenedor p {
+      font-size: 1.1252em;
+      line-height: 1em;
+      padding: 5px 0px 0px 0px;
+      margin: 0px auto;
+      width: 50%;
+      text-transform: none; }
+
+.nav--menuInternoCuatro {
+  margin: 20px auto;
+  padding: 0px 0px 0px 0px;
+  height: auto;
+  width: 980px; }
+  .nav--menuInternoCuatro .menuInterno--contenedor {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 65px;
+    background: #FF4337 !important; }
+    .nav--menuInternoCuatro .menuInterno--contenedor ks-swiper-slide {
+      width: 195px !important; }
+    .nav--menuInternoCuatro .menuInterno--contenedor button {
+      width: 195px;
+      height: 65px;
+      border: none;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 0px 0px 10px 0px !important;
+      margin: 0px 0px 0px 0px !important;
+      float: left; }
+      .nav--menuInternoCuatro .menuInterno--contenedor button:focus {
+        outline: none; }
+      .nav--menuInternoCuatro .menuInterno--contenedor button:hover {
+        outline: none;
+        color: #fff !important;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+        padding: 0px 0px 6px 0px !important; }
+        .nav--menuInternoCuatro .menuInterno--contenedor button:hover p {
+          color: #fff !important; }
+      .nav--menuInternoCuatro .menuInterno--contenedor button .glyphicon.glyphicon-one-fine-dot {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 30%;
+        right: -5px;
+        z-index: 1000;
+        color: rgba(255, 255, 255, 0.7); }
+      .nav--menuInternoCuatro .menuInterno--contenedor button .glyphicon.glyphicon-one-fine-dot:before {
+        content: "\25cf";
+        font-size: 0.8em;
+        line-height: 0.8em; }
+    .nav--menuInternoCuatro .menuInterno--contenedor .activo {
+      outline: none;
+      color: #fff !important;
+      border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+      padding: 0px 0px 6px 0px !important; }
+      .nav--menuInternoCuatro .menuInterno--contenedor .activo button {
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+        padding: 0px 0px 6px 0px !important; }
+      .nav--menuInternoCuatro .menuInterno--contenedor .activo p {
+        color: #fff !important; }
+    .nav--menuInternoCuatro .menuInterno--contenedor .activo-select {
+      width: 195px;
+      position: absolute;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.5) !important;
+      border: none; }
+    .nav--menuInternoCuatro .menuInterno--contenedor p {
+      font-size: 1.1252em;
+      line-height: 1em;
+      padding: 5px 0px 0px 0px;
+      margin: 0px auto;
+      width: 50%;
+      text-transform: none; }
+
+.nav--menuInternoCinco {
+  margin: 20px auto;
+  padding: 0px 0px 0px 0px;
+  height: auto;
+  width: 980px; }
+  .nav--menuInternoCinco .menuInterno--contenedor {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 65px;
+    background: #646469 !important; }
+    .nav--menuInternoCinco .menuInterno--contenedor ks-swiper-slide {
+      width: 195px !important; }
+    .nav--menuInternoCinco .menuInterno--contenedor button {
+      width: 195px;
+      height: 65px;
+      border: none;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 0px 0px 10px 0px !important;
+      margin: 0px 0px 0px 0px !important;
+      float: left; }
+      .nav--menuInternoCinco .menuInterno--contenedor button:focus {
+        outline: none; }
+      .nav--menuInternoCinco .menuInterno--contenedor button:hover {
+        outline: none;
+        color: #fff !important;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+        padding: 0px 0px 6px 0px !important; }
+        .nav--menuInternoCinco .menuInterno--contenedor button:hover p {
+          color: #fff !important; }
+      .nav--menuInternoCinco .menuInterno--contenedor button .glyphicon.glyphicon-one-fine-dot {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 30%;
+        right: -5px;
+        z-index: 1000;
+        color: rgba(255, 255, 255, 0.7); }
+      .nav--menuInternoCinco .menuInterno--contenedor button .glyphicon.glyphicon-one-fine-dot:before {
+        content: "\25cf";
+        font-size: 0.8em;
+        line-height: 0.8em; }
+    .nav--menuInternoCinco .menuInterno--contenedor .activo {
+      outline: none;
+      color: #fff !important;
+      border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+      padding: 0px 0px 6px 0px !important; }
+      .nav--menuInternoCinco .menuInterno--contenedor .activo button {
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
+        padding: 0px 0px 6px 0px !important; }
+      .nav--menuInternoCinco .menuInterno--contenedor .activo p {
+        color: #fff !important; }
+    .nav--menuInternoCinco .menuInterno--contenedor .activo-select {
+      width: 195px;
+      position: absolute;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.5) !important;
+      border: none; }
+    .nav--menuInternoCinco .menuInterno--contenedor p {
+      font-size: 1.1252em;
+      line-height: 1em;
+      padding: 5px 0px 0px 0px;
+      margin: 0px auto;
+      width: 50%;
+      text-transform: none; }
+
 .nav--menuInterno {
   margin: 80px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
@@ -113,10 +471,6 @@
     .nav--menuInterno .menuInterno--contenedor .conenedor--nav {
       margin: 0;
       padding: 0px 0px; }
-      .nav--menuInterno .menuInterno--contenedor .conenedor--nav .h--boton {
-        width: 325px !important; }
-        .nav--menuInterno .menuInterno--contenedor .conenedor--nav .h--boton button {
-          width: 325px !important; }
       .nav--menuInterno .menuInterno--contenedor .conenedor--nav button {
         width: 195px;
         height: 65px;
@@ -225,16 +579,14 @@ animation:*/
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out; }
 
-.swiper-container {
-  width: 600px;
-  max-width: 500px;
-  width: 100%;
-  height: 300px;
-  margin-top: 200px; }
+.h--boton {
+  width: 325px !important; }
+  .h--boton button {
+    width: 325px !important; }
 
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+.h--boton--6 {
+  width: 162px !important; }
+  .h--boton--6 button {
+    width: 162px !important; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vivo-menu</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="./assets/css/animate.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <link href="templates/ja_builder/vendors/goham/stylesheet.css" rel="stylesheet" type="text/css" />
+  <!-- dependencias bower-components -->
+  <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" href="./bower_components/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/swiper/dist/js/swiper.js"></script>
+  <script src="./bower_components/angular/angular.js"></script>
+  <script src="./bower_components/angular-aria/angular-aria.js"></script>
+  <script src="./bower_components/angular-animate/angular-animate.js"></script>
+  <script src="./bower_components/angular-material/angular-material.js"></script>
+  <script src="./bower_components/angular-messages/angular-messages.js"></script>
+  <script src="./bower_components/angular-swiper/dist/angular-swiper.js"></script>
+  <!-- dependencias bower-components -->
+  <!-- este archivo tiene los controladores AngularJS -->
+  <script src="./assets/js/controller.js"></script>
+  <!-- este archivo contiene la navegacion -->
+</head>
+
+<body ng-app="myApp">
+  <header>
+    <nav style="height: 50px;">
+    </nav>
+    <!--   menu logeado -->
+    <nav class="nav--vivo">
+      <div class="container" style="outline: solid 1px #eee">
+        <div class="vivo--menu" ng-controller="menuCrtl">
+          <!-- mega menu -->
+          <ul>
+            <li class="menu--privado">
+              <button class="active--menuAzul" ng-class="{'active': isActive}" ng-click="
+                activeButton();
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;"
+                type="button">
+                <p>Nuestra <span>cultura</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive2}" ng-click="
+                activeButton2();
+                isActive= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>gestión de <span>personas</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive3}" ng-click="
+                activeButton3();
+                isActive= null;
+                isActive2= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>beneficios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive4}" ng-click="
+                activeButton4();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive5= null;" type="button">
+                <p>biblioteca</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive5}" ng-click="
+                activeButton5();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;" type="button">
+                <p>Medios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container ">
+      <div class="nav--menuInternoUno ng-cloak">
+        <div class="menuInterno--contenedor">
+          <ks-swiper-container  initial-slide="0" loop="false" show-nav-buttons="false" slides-per-view="6" space-between="0" pagination-clickable="false">
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Quienes somos </p>
+                    <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Valores Corporativos</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>GPTW</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Galería</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Noticias</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide activo h--boton--6">
+                <button>
+                  <p>Organigramas</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Centros Comerciales</p>
+                </button>
+              </ks-swiper-slide>
+          </ks-swiper-container>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+  <section>
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
