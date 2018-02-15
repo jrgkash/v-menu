@@ -196,6 +196,24 @@
   <section>
 
 
+    <div ng-controller="expandCollapseCtrl">
+      <div class="ban-container menuPublicoMobil--bloque"  >
+        <div class="menuPublicoMobil--publico" ng-click="menuMovil = !menuMovil" ng-class="{'navegacion-cerrada': menuMovil, 'navegacion-expandida': !menuMovil}">
+          uno
+          <i class="material-icons down">keyboard_arrow_down</i>
+          <i class="material-icons up">keyboard_arrow_up</i>
+        </div>
+        <md-content class="lateral--contenido " ng-hide="menuMovil" ng-class="{'slideDown-1': menu.name=='Asesoría personalizada', 'slideDown-2': menu.name=='Productos y servicios', 'slideDown-3': menu.name=='Reputación y respaldo',}">
+          <md-list>
+            <md-list-item ng-repeat="subMenu in menu.menu" ng-controller="asideCloseLeft">
+              <md-button ng-href="" ng-click="close()"  >dos</md-button>
+            </md-list-item>
+          </md-list>
+        </md-content>
+      </div>
+    </div>
+
+
 
   </section>
 

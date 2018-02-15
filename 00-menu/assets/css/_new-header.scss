@@ -822,6 +822,49 @@ animation:*/
 
 }
 
+/* estilos menu lateral */
+
+.menuPublicoMobil--bloque {
+  width: auto;
+  height: auto;
+  padding: 0;
+
+  .menuPublicoMobil--publico {
+    line-height: 55px;
+    height: auto;
+    overflow: hidden;
+    border-top: solid 1px rgba(0, 0, 0, 0.12);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.12);
+    padding: 0 15px;
+    i {
+      float: right;
+      line-height: 55px;
+    }
+
+    .lupa {
+      margin-top: -10px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .navegacion-cerrada {
+    i.up {
+      display: none;
+    }
+  }
+
+  .navegacion-expandida {
+    color: #5BABBF;
+
+    i.down {
+      display: none;
+    }
+  }
+}
+
 
 // .swiper-button-next, .swiper-button-prev {
 //     position: absolute;
