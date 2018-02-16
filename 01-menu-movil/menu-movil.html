@@ -166,145 +166,135 @@
 
 
 
-<section>
-
-  <div layout="row" ng-controller="MyController02">
-    <md-sidenav md-component-id="left" class="md-sidenav-left">
-      <class class="menu--responsive ">
-        <div  ng-controller="MyController02">
-          <button ng-click="openLeftMenu()" class="responsive--menu">
-          <span class="glyphicon glyphicon-menu-hamburger">  </span>Menu
-          </button>
+  <section>
+    <div layout="row" ng-controller="MyController02">
+      <md-sidenav md-component-id="left" class="md-sidenav-left">
+        <class class="menu--responsive ">
+          <div  ng-controller="MyController02">
+            <button ng-click="openLeftMenu()" class="responsive--menu">
+            <span class="glyphicon glyphicon-menu-hamburger">  </span>Menu
+            </button>
+          </div>
+        </class>
+        <div class="contenedor--colapsable ng-cloak " ng-controller="expandCollapseCtrl" >
+          <div class="expandcollapse-item">
+            <div ng-click="toggle1()"  ng-class="{'expandcollapse-heading-collapsed': active1, 'expandcollapse-heading-expanded': !active1}">
+                <p class="titulo--menu"> Nuestra cultura</p>
+              </div>
+              <div class="slideDown" ng-hide="!active1">
+                <div class="expand-collapse-content01">
+                  <button>
+                    <p>Quienes Somos</p>
+                  </button>
+                  <button>
+                    <p>Valores Corporativos</p>
+                  </button>
+                  <button>
+                    <p>GPTW</p>
+                  </button>
+                  <button>
+                    <p>Galería</p>
+                  </button>
+                  <button>
+                    <p>Noticias</p>
+                  </button>
+                  <button>
+                    <p>Organigramas</p>
+                  </button>
+                  <button>
+                    <p>Centros Comerciales</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="expandcollapse-item">
+              <div ng-click="toggle2()"  ng-class="{'expandcollapse-heading-collapsed': active2, 'expandcollapse-heading-expanded': !active2}">
+                <p class="titulo--menu">gestión de personas</p>
+              </div>
+              <div class="slideDown02" ng-hide="!active2">
+                <div class="expand-collapse-content02">
+                  <button>
+                    <p>Reclutamiento y Selección </p>
+                  </button>
+                  <button>
+                    <p>Gestón del Desempeño</p>
+                  </button>
+                  <button>
+                    <p>Capacitación</p>
+                  </button>
+                  <button>
+                    <p>Cursos Internos</p>
+                  </button>
+                  <button>
+                    <p>Hitos</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="expandcollapse-item">
+              <div ng-click="toggle3()"  ng-class="{'expandcollapse-heading-collapsed': active3, 'expandcollapse-heading-expanded': !active3}">
+                <p class="titulo--menu">beneficios</p>
+              </div>
+              <div class="slideDown02" ng-hide="!active3">
+                <div class="expand-collapse-content03">
+                  <button>
+                    <p>Salud</p>
+                  </button>
+                  <button>
+                    <p>Educación</p>
+                  </button>
+                  <button>
+                    <p>Familia Tiempo Libre</p>
+                  </button>
+                  <button>
+                    <p>Convenios</p>
+                  </button>
+                  <button>
+                    <p>Formularios</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="expandcollapse-item">
+              <div ng-click="toggle4()"  ng-class="{'expandcollapse-heading-collapsed': active4, 'expandcollapse-heading-expanded': !active4}">
+                <p class="titulo--menu">medios</p>
+              </div>
+              <div class="slideDown03" ng-hide="!active4">
+                <div class="expand-collapse-content04">
+                  <button>
+                    <p>Todos</p>
+                  </button>
+                  <button>
+                    <p>Procedimientos</p>
+                  </button>
+                  <button>
+                    <p>Politicas</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="expandcollapse-item">
+              <div ng-click="toggle5()"  ng-class="{'expandcollapse-heading-collapsed': active5, 'expandcollapse-heading-expanded': !active5}">
+                <p class="titulo--menu">biblioteca</p>
+              </div>
+              <div class="slideDown03" ng-hide="!active5">
+                <div class="expand-collapse-content05">
+                  <button>
+                    <p>Todos</p>
+                  </button>
+                  <button>
+                    <p>Procedimientos</p>
+                  </button>
+                  <button>
+                    <p>Politicas</p>
+                  </button>
+                </div>
+              </div>
+            </div>
         </div>
-      </class>
-      <div class="contenedor--colapsable " ng-controller="expandCollapseCtrl" ng-cloak>
-          <div class="expandcollapse-item">
-            <div ng-click="active = !active" ng-class="{'expandcollapse-heading-collapsed': active, 'expandcollapse-heading-expanded': !active}">
-              <p class="titulo--menu"> Nuestra cultura</p>
-            </div>
-            <div class="slideDown" ng-hide="active">
-              <div class="expand-collapse-content01">
-                <button>
-                  <p>Quienes Somos</p>
-                </button>
-                <button>
-                  <p>Valores Corporativos</p>
-                </button>
-                <button>
-                  <p>GPTW</p>
-                </button>
-                <button>
-                  <p>Galería</p>
-                </button>
-                <button>
-                  <p>Noticias</p>
-                </button>
-                <button>
-                  <p>Organigramas</p>
-                </button>
-                <button>
-                  <p>Centros Comerciales</p>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="expandcollapse-item">
-            <div ng-click="active1 = !active1" ng-class="{'expandcollapse-heading-collapsed': active1, 'expandcollapse-heading-expanded': !active1}">
-              <p class="titulo--menu">gestión de personas</p>
-            </div>
-            <div class="slideDown02" ng-hide="active1">
-              <div class="expand-collapse-content02">
-                <button>
-                  <p>Reclutamiento y Selección </p>
-                </button>
-                <button>
-                  <p>Gestón del Desempeño</p>
-                </button>
-                <button>
-                  <p>Capacitación</p>
-                </button>
-                <button>
-                  <p>Cursos Internos</p>
-                </button>
-                <button>
-                  <p>Hitos</p>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="expandcollapse-item">
-            <div ng-click="active2 = !active2" ng-class="{'expandcollapse-heading-collapsed': active2, 'expandcollapse-heading-expanded': !active2}">
-              <p class="titulo--menu">beneficios</p>
-            </div>
-            <div class="slideDown02" ng-hide="active2">
-              <div class="expand-collapse-content03">
-                <button>
-                  <p>Salud</p>
-                </button>
-                <button>
-                  <p>Educación</p>
-                </button>
-                <button>
-                  <p>Familia Tiempo Libre</p>
-                </button>
-                <button>
-                  <p>Convenios</p>
-                </button>
-                <button>
-                  <p>Formularios</p>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="expandcollapse-item">
-            <div ng-click="active3 = !active3" ng-class="{'expandcollapse-heading-collapsed': active3, 'expandcollapse-heading-expanded': !active3}">
-              <p class="titulo--menu">medios</p>
-            </div>
-            <div class="slideDown03" ng-hide="active3">
-              <div class="expand-collapse-content04">
-                <button>
-                  <p>Todos</p>
-                </button>
-                <button>
-                  <p>Procedimientos</p>
-                </button>
-                <button>
-                  <p>Politicas</p>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="expandcollapse-item">
-            <div ng-click="active4 = !active4" ng-class="{'expandcollapse-heading-collapsed': active4, 'expandcollapse-heading-expanded': !active4}">
-              <p class="titulo--menu">biblioteca</p>
-            </div>
-            <div class="slideDown03" ng-hide="active4">
-              <div class="expand-collapse-content05">
-                <button>
-                  <p>Todos</p>
-                </button>
-                <button>
-                  <p>Procedimientos</p>
-                </button>
-                <button>
-                  <p>Politicas</p>
-                </button>
-              </div>
-            </div>
-          </div>
-      </div>
-    </md-sidenav>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
+      </md-sidenav>
+    </div>
+  </section>
 
 
 

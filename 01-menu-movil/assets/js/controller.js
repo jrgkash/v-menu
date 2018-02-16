@@ -103,12 +103,79 @@ myApp.directive('swiper', function() {
 
 
 
+// myApp.controller('expandCollapseCtrl', function ($scope) {
+//         $scope.active = true;
+//         $scope.active1 = true;
+//         $scope.active2 = true;
+//         $scope.active3 = true;
+//         $scope.active4 = true;
+//
+// });
+
+
 myApp.controller('expandCollapseCtrl', function ($scope) {
-        $scope.active = true;
-        $scope.active1 = true;
-        $scope.active2 = true;
-        $scope.active3 = true;
-        $scope.active4 = true;
+        $scope.active1 = false;
+        $scope.active2 = false;
+        $scope.active3 = false;
+        $scope.active4 = false;
+        $scope.active5 = false;
+
+        $scope.toggle1 = function(){
+          if(!$scope.active1){
+            $scope.active1 = true;
+            $scope.active2 = false;
+            $scope.active3 = false;
+            $scope.active4 = false;
+            $scope.active5 = false;
+          }else{
+            $scope.active1 = false;
+          }
+        };
+
+        $scope.toggle2 = function(){
+          if(!$scope.active2){
+            $scope.active2 = true;
+            $scope.active1 = false;
+            $scope.active3 = false;
+            $scope.active4 = false;
+            $scope.active5 = false;
+          }else{
+            $scope.active2 = false;
+          }
+        };
+        $scope.toggle3 = function(){
+          if(!$scope.active3){
+            $scope.active3 = true;
+            $scope.active1 = false;
+            $scope.active2 = false;
+            $scope.active4 = false;
+            $scope.active5 = false;
+          }else{
+            $scope.active3 = false;
+          }
+        };
+        $scope.toggle4 = function(){
+          if(!$scope.active4){
+            $scope.active4 = true;
+            $scope.active1 = false;
+            $scope.active2 = false;
+            $scope.active3 = false;
+            $scope.active5 = false;
+          }else{
+            $scope.active4 = false;
+          }
+        };
+        $scope.toggle5 = function(){
+          if(!$scope.active5){
+            $scope.active5 = true;
+            $scope.active1 = false;
+            $scope.active2 = false;
+            $scope.active3 = false;
+            $scope.active4 = false;
+          }else{
+            $scope.active5 = false;
+          }
+        };
 
 });
 
@@ -120,6 +187,7 @@ myApp.controller('slide01', function($scope, $timeout, $window) {
     spaceBetween: 1,
     paginationClickable: true,
     effect: 'slide',
+
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     breakpoints: {
