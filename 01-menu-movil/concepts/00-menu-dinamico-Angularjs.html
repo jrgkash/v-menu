@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vivo-menu</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="./assets/css/animate.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <!-- dependencias bower-components -->
+  <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" href="./bower_components/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/swiper/dist/js/swiper.js"></script>
+  <script src="./bower_components/angular/angular.js"></script>
+  <script src="./bower_components/angular-aria/angular-aria.js"></script>
+  <script src="./bower_components/angular-animate/angular-animate.js"></script>
+  <script src="./bower_components/angular-material/angular-material.js"></script>
+  <script src="./bower_components/angular-messages/angular-messages.js"></script>
+  <script src="./bower_components/angular-swiper/dist/angular-swiper.js"></script>
+  <!-- dependencias bower-components -->
+  <!-- este archivo tiene los controladores AngularJS -->
+  <script src="./assets/js/controller.js"></script>
+  <!-- este archivo contiene la navegacion -->
+</head>
+
+<body ng-app="myApp">
+  <header>
+    <nav  >
+    </nav>
+    <!--   menu logeado -->
+    <nav class="nav--vivo">
+      <div class="container"   >
+        <div class="vivo--menu" ng-controller="menuCrtl">
+          <!-- mega menu -->
+          <ul>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive}" ng-click="
+                activeButton();
+                apertura01 = ! apertura01;
+                currentOpen.menuId = false;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;
+                apertura02 = false;
+                apertura03 = false;
+                apertura04 = false;
+                apertura05 = false;" type="button">
+                <p>Nuestra</p>
+                <h3>cultura</h3>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive2}" ng-click="
+                activeButton2();
+                apertura02 = ! apertura02;
+                currentOpen.menuId = false;
+                isActive= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;
+                apertura01 = false;
+                apertura03 = false;
+                apertura04 = false;
+                apertura05 = false;" type="button">
+                <p>gestión de</p>
+                <h3>personas</h3>
+
+
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive3}" ng-click="
+                activeButton3();
+                apertura03 = ! apertura03;
+                currentOpen.menuId = false;
+                isActive= null;
+                isActive2= null;
+                isActive4= null;
+                isActive5= null;
+                apertura01 = false;
+                apertura02 = false;
+                apertura04 = false;
+                apertura05 = false;" type="button">
+                <p>beneficios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive4}" ng-click="
+                activeButton4();
+                apertura04 = ! apertura04;
+                currentOpen.menuId = false;
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive5= null;
+                apertura01 = false;
+                apertura02 = false;
+                apertura03 = false;
+                apertura05 = false;" type="button">
+                <p>biblioteca</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive5}" ng-click="
+                activeButton5();
+                apertura05 = ! apertura05;
+                currentOpen.menuId = false;
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                apertura01 = false;
+                apertura02 = false;
+                apertura03 = false;
+                apertura04 = false;" type="button">
+                <p>Medios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+          </ul>
+          </ul>
+          <div class="nav--menuInterno " ng-show="apertura01" ng-cloak>
+            <div class="menuInterno--contenedor" ng-click="apertura01 = false; isActive= null; ">
+              <div class="conenedor--nav">
+                <div ng-controller="MyCtrl">
+                  <div id="my-swiper" class="swiper-container" loop="true" show-nav-buttons="true" swiper on-slide-change="changedSlide($index)">
+                    <div class="swiper-wrapper">
+                      <button class="swiper-slide">
+                            <p>Quienes</p>
+                            <p>Somos</p>
+                          </button>
+                      <button class="swiper-slide">
+                            <p>Valores</p>
+                            <p>Corporativos</p>
+                      </button>
+                      <button class="swiper-slide">
+                            <p>GPTW</p>
+                          <!--   <p>Test</p> -->
+                      </button>
+                      <button class="swiper-slide">
+                        <p>Galería</p>
+                      <!--   <p>Test</p> -->
+                      </button>
+                      <button class="swiper-slide">
+                        <p>Noticias</p>
+                      <!--   <p>Test</p> -->
+                      </button>
+                      <button class="swiper-slide">
+                        <p>Organigramas
+                        </p>
+                      <!--   <p>Test</p> -->
+                      </button>
+                      <button class="swiper-slide">
+                        <p>Centros </p>
+                        <p>Comerciales</p>
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav--menuInterno " ng-show="apertura02" ng-cloak>
+            <div class="menuInterno--contenedor" ng-click="apertura02 = false; isActive2= null; ">
+              <div class="conenedor--nav">
+                <div ng-controller="MyCtrl">
+                  <div id="my-swiper" class="swiper-container" loop="true" show-nav-buttons="true" swiper on-slide-change="changedSlide($index)">
+                    <div class="swiper-wrapper">
+                      <button class="swiper-slide">
+                            <p>Reclutamiento</p>
+                            <p>y Selección</p>
+                          </button>
+                      <button class="swiper-slide">
+                            <p>Gestón del</p>
+                            <p>Desempeño</p>
+                          </button>
+                      <button class="swiper-slide">
+                            <p>Capacitación</p>
+                          <!--   <p>Test</p> -->
+                          </button>
+                      <button class="swiper-slide">
+                            <p>Cursos</p>
+                            <p>Internos</p>
+                          </button>
+                      <button class="swiper-slide">
+                            <p>Hitos</p>
+                          <!--   <p>Test</p> -->
+                          </button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav--menuInterno " ng-show="apertura03" ng-cloak>
+            <div class="menuInterno--contenedor" ng-click="apertura03 = false; isActive3 = false; ">
+              <div class="conenedor--nav">
+                <div ng-controller="MyCtrl">
+                  <div id="my-swiper" class="swiper-container" loop="true" show-nav-buttons="true" swiper on-slide-change="changedSlide($index)">
+                    <div class="swiper-wrapper">
+                      <button class="swiper-slide">
+                            <p>Salud</p>
+                            <!-- <p>Test</p> -->
+                          </button>
+                      <button class="swiper-slide">
+                            <p>Educación</p>
+                            <!-- <p>Test</p> -->
+                          </button>
+                      <button class="swiper-slide">
+                            <p>Familia</p>
+                            <p>Tiempo Libre</p>
+                          </button>
+                      <button class="swiper-slide">
+                            <p>Convenios</p>
+                          <!--   <p>Test</p> -->
+                          </button>
+                      <button class="swiper-slide">
+                            <p>Formularios</p>
+                            <!-- <p>Test</p> -->
+                          </button>
+                      <!-- <button class="swiper-slide">
+                            <p>Option</p>
+                            <p>Test</p>
+                          </button>
+                      <button class="swiper-slide">
+                            <p>Option</p>
+                            <p>Test</p>
+                          </button>
+                      <button class="swiper-slide">
+                            <p>Option</p>
+                            <p>Test</p>
+                          </button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav--menuInterno " ng-show="apertura04" ng-cloak>
+            <div class="menuInterno--contenedor" ng-click="apertura04 = false; isActive4 = false; ">
+              <div class="conenedor--nav">
+                <div ng-controller="MyCtrl">
+                  <div id="my-swiper" class="swiper-container" loop="true" show-nav-buttons="true" swiper on-slide-change="changedSlide($index)">
+                    <div class="swiper-wrapper">
+                      <button class="swiper-slide h--boton">
+                            <p>Todos</p>
+                          <!--   <p>Test</p> -->
+                          </button>
+                      <button class="swiper-slide h--boton">
+                            <p>Procedimientos</p>
+                          <!--   <p>Test</p> -->
+                          </button>
+                      <button class="swiper-slide h--boton">
+                            <p>Politicas</p>
+                            <!-- <p>Test</p> -->
+                          </button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav--menuInterno " ng-show="apertura05" ng-cloak>
+            <div class="menuInterno--contenedor" ng-click="apertura05 = false; isActive5 = false; ">
+              <div class="conenedor--nav">
+                <div ng-controller="MyCtrl">
+                  <div id="my-swiper" class="swiper-container" loop="true" show-nav-buttons="true" swiper on-slide-change="changedSlide($index)">
+                    <div class="swiper-wrapper">
+                      <button class="swiper-slide  h--boton ">
+                            <p>Todos</p>
+                          <!--   <p>Test</p> -->
+                          </button>
+                      <button class="swiper-slide  h--boton ">
+                            <p>Procedimientos</p>
+                            <!-- <p>Test</p> -->
+                          </button>
+                      <button class="swiper-slide  h--boton ">
+                            <p>Politicas</p>
+                          <!--   <p>Test</p> -->
+                          </button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--FIN TAG mega menu jorge 23/08 -->
+    </nav>
+    <!--   menu logeado -->
+  </header>
+
+
+
+  <!-- <section>
+  <div layout="row" ng-controller="MyController02">
+  <md-sidenav md-component-id="left" class="md-sidenav-left">
+    <div class="contenedor--colapsable " ng-controller="expandCollapseCtrl" ng-cloak>
+      <div class="expandcollapse-item">
+        <div ng-click="active = !active" ng-class="{'expandcollapse-heading-collapsed': active, 'expandcollapse-heading-expanded': !active}">
+          <p class="titulo--menu">Item 1</p>
+        </div>
+        <div class="slideDown" ng-hide="active">
+          <div class="expand-collapse-content">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="expandcollapse-item">
+        <div ng-click="active1 = !active1" ng-class="{'expandcollapse-heading-collapsed': active1, 'expandcollapse-heading-expanded': !active1}">
+          <p class="titulo--menu">Item 2</p>
+        </div>
+        <div class="slideDown" ng-hide="active1">
+          <div class="expand-collapse-content">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+  </md-sidenav>
+  <md-content>
+    <md-button ng-click="openLeftMenu()">
+      Open Left Menu
+    </md-button>
+  </md-content>
+</div>
+</section> -->
+
+
+  <section>
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

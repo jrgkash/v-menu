@@ -1,0 +1,22 @@
+{
+  "name": "vivo-menu",
+  "authors": [
+    "Jorge Guerra"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.0.9",
+    "swiper": "~3.0.5",
+    "angular-swiper": "~0.4.0"
+  }
+}

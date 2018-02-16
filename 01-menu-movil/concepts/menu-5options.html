@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vivo-menu</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="./assets/css/animate.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <!-- dependencias bower-components -->
+  <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" href="./bower_components/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./bower_components/swiper/dist/js/swiper.js"></script>
+  <script src="./bower_components/angular/angular.js"></script>
+  <script src="./bower_components/angular-aria/angular-aria.js"></script>
+  <script src="./bower_components/angular-animate/angular-animate.js"></script>
+  <script src="./bower_components/angular-material/angular-material.js"></script>
+  <script src="./bower_components/angular-messages/angular-messages.js"></script>
+  <script src="./bower_components/angular-swiper/dist/angular-swiper.js"></script>
+  <!-- dependencias bower-components -->
+  <!-- este archivo tiene los controladores AngularJS -->
+  <script src="./assets/js/controller.js"></script>
+  <!-- este archivo contiene la navegacion -->
+</head>
+
+<body ng-app="myApp">
+  <header>
+    <nav  >
+    </nav>
+    <!--   menu logeado -->
+    <nav class="nav--vivo">
+      <div class="container">
+        <div class="vivo--menu" ng-controller="menuCrtl">
+          <!-- mega menu -->
+          <ul>
+            <li class="menu--privado" >
+              <button  ng-class="{'active': isActive}"
+              ng-click="
+                activeButton();
+                apertura01 = ! apertura01;
+                currentOpen.menuId = false;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;
+                apertura02 = false;
+                apertura03 = false;
+                apertura04 = false;
+                apertura05 = false;"
+              type="button">
+                <p>option</p>
+                <h3>
+                  test
+                </h3>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+              <div class="menuFondo navMenu" ng-show="apertura01">
+                <md-menu-content id="#indicadoreContenedorE" ng-mouseleave="apertura01 = false; isActive = false; ">
+                  <div flex="100">
+                    <div layout="row" layout-xs="column">
+                      <div class="col-xs-12  navMenu--contenido menu--padding">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                          <md-list class="navMenu--opciones">
+                            <div class="subheader">
+                              <md-list-item ng-href="#">uno</md-list-item>
+                            </div>
+                          </md-list>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </md-menu-content>
+              </div>
+            </li>
+            <li class="menu--privado " >
+              <button  ng-class="{'active': isActive2}"
+              ng-click="
+                activeButton2();
+                apertura02 = ! apertura02;
+                currentOpen.menuId = false;
+                isActive= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;
+                apertura01 = false;
+                apertura03 = false;
+                apertura04 = false;
+                apertura05 = false;"
+              type="button">
+                <p>option</p>
+                <h3>
+                  test
+                </h3>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+              <div class="menuFondo navMenu" ng-show="apertura02">
+                <md-menu-content id="#indicadoreContenedorE" ng-mouseleave="apertura02 = false; isActive2 = false; ">
+                  <div flex="100">
+                    <div layout="row" layout-xs="column">
+                      <div class="col-xs-12  navMenu--contenido menu--padding">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                          <md-list class="navMenu--opciones">
+                            <div class="subheader">
+                              <md-list-item ng-href="#">dos</md-list-item>
+                            </div>
+                          </md-list>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </md-menu-content>
+              </div>
+            </li>
+            <li class="menu--privado " >
+              <button  ng-class="{'active': isActive3}"
+              ng-click="
+                activeButton3();
+                apertura03 = ! apertura03;
+                currentOpen.menuId = false;
+                isActive= null;
+                isActive2= null;
+                isActive4= null;
+                isActive5= null;
+                apertura01 = false;
+                apertura02 = false;
+                apertura04 = false;
+                apertura05 = false;"
+              type="button">
+                <p>option</p>
+                <h3>
+                  test
+                </h3>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+              <div class="menuFondo navMenu" ng-show="apertura03">
+                <md-menu-content id="#indicadoreContenedorE" ng-mouseleave="apertura03 = false; isActive3 = false; ">
+                  <div flex="100">
+                    <div layout="row" layout-xs="column">
+                      <div class="col-xs-12  navMenu--contenido menu--padding">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                          <md-list class="navMenu--opciones">
+                            <div class="subheader">
+                              <md-list-item ng-href="#">tres</md-list-item>
+                            </div>
+                          </md-list>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </md-menu-content>
+              </div>
+            </li>
+            <li class="menu--privado " >
+              <button  ng-class="{'active': isActive4}"
+              ng-click="
+                activeButton4();
+                apertura04 = ! apertura04;
+                currentOpen.menuId = false;
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive5= null;
+                apertura01 = false;
+                apertura02 = false;
+                apertura03 = false;
+                apertura05 = false;"
+              type="button">
+                <p>option</p>
+                <h3>
+                  test
+                </h3>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+              <div class="menuFondo navMenu" ng-show="apertura04">
+                <md-menu-content id="#indicadoreContenedorE" ng-mouseleave="apertura04 = false; isActive4 = false; ">
+                  <div flex="100">
+                    <div layout="row" layout-xs="column">
+                      <div class="col-xs-12  navMenu--contenido menu--padding">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                          <md-list class="navMenu--opciones">
+                            <div class="subheader">
+                              <md-list-item ng-href="#">4</md-list-item>
+                            </div>
+                          </md-list>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </md-menu-content>
+              </div>
+            </li>
+            <li class="menu--privado " >
+              <button  ng-class="{'active': isActive5}"
+              ng-click="
+                activeButton5();
+                apertura05 = ! apertura05;
+                currentOpen.menuId = false;
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                apertura01 = false;
+                apertura02 = false;
+                apertura03 = false;
+                apertura04 = false;"
+              type="button">
+                <p>option</p>
+                <h3>
+                  test
+                </h3>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+              <div class="menuFondo navMenu" ng-show="apertura05">
+                <md-menu-content id="#indicadoreContenedorE" ng-mouseleave="apertura05 = false; isActive5 = false; ">
+                  <div flex="100">
+                    <div layout="row" layout-xs="column">
+                      <div class="col-xs-12  navMenu--contenido menu--padding">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                          <md-list class="navMenu--opciones">
+                            <div class="subheader">
+                              <md-list-item ng-href="#">cin5</md-list-item>
+                            </div>
+                          </md-list>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </md-menu-content>
+              </div>
+
+            </li>
+
+
+
+
+
+
+
+
+
+          </ul>
+        </div>
+      </div>
+      <!--FIN TAG mega menu jorge 23/08 -->
+    </nav>
+    <!--   menu logeado -->
+  </header>
+</body>
+
+</html>
