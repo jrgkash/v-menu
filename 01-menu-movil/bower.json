@@ -1,12 +1,12 @@
 {
-  "name": "vivo-menu",
+  "name": "01-menu-movil copia",
+  "homepage": "https://github.com/jrgkash/v-menu",
   "authors": [
-    "Jorge Guerra"
+    "jtg"
   ],
   "description": "",
   "main": "",
   "license": "MIT",
-  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular-material": "^1.0.9",
+    "angular": "^1.6.9",
     "swiper": "~3.0.5",
     "angular-swiper": "~0.4.0"
   }

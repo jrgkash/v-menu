@@ -716,7 +716,7 @@
         margin: 0px 0px 0px 0px !important;
         float: left;
         font-family: 'GothamMedium';
-        
+
         &:focus{
           outline: none;
 
@@ -754,16 +754,73 @@
 
 /* css colapsable*/
 .contenedor--colapsable {
-  margin-top: 40px;
+  margin-top: 5px;
   .titulo--menu{
-    color: red;
-    padding: 4px 0px 0px 0px;
+    color: #ccc;
+    padding: 5px 0px 0px 0px;
+    text-transform: uppercase;
+    height: 13px;
+    font-size: 13px !important;
+    line-height: 13px;
+		font-family: 'GothamMedium';
+  }
+  :nth-child(1) .titulo--menu{
+    color:  #0081C9 !important;
+  }
+  :nth-child(2) .titulo--menu{
+    color:  #FFB718 !important;
+  }
+  :nth-child(3) .titulo--menu{
+    color:  #00AE41 !important;
+  }
+  :nth-child(4) .titulo--menu{
+    color:  #FF4337 !important;
+  }
+  :nth-child(5) .titulo--menu{
+    color:  #646469 !important;
   }
 }
 
 .expandcollapse-item {
   overflow: hidden;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ddd;
+	&:focus{
+		outline: none;
+
+	}
+	&:active{
+		outline: none;
+
+	}
+  button{
+    width: 100%;
+    margin: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, .5) !important;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: #fff;
+    text-align: left;
+		padding: 0px;
+
+
+    background: transparent;
+		font-family: 'GothamMedium';
+    &:focus{
+      outline: none;
+
+    }
+    &:hover{
+      outline: none;
+      opacity: 0.8;
+    }
+    p{
+			 padding: 10px 0px 0px 15px;
+			    font-size: 12px;
+					line-height: 12px;
+    }
+
+  }
 
 }
 
@@ -773,7 +830,7 @@
   position: relative;
   z-index: 100000000;
   background-color: white;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ddd;
   &:focus {
     outline: none;
   }
@@ -789,6 +846,7 @@
   &:focus {
     outline: none;
   }
+
 
 }
 
@@ -808,13 +866,31 @@
   line-height: 0px;
 }
 
-.expand-collapse-content {
-  padding: 20px;
+
+
+.expand-collapse-content01 {
+  padding: 5px 0px 25px 0px;
+  background: #0081C9 !important;
+}
+.expand-collapse-content02 {
+  padding: 5px 0px 25px 0px;
+  background: #FFB718 !important;
+}
+.expand-collapse-content03 {
+  padding: 5px 0px 25px 0px;
+  background: #00AE41 !important;
+}
+.expand-collapse-content04 {
+  padding: 5px 0px 25px 0px;
+  background: #FF4337 !important;
+}
+.expand-collapse-content05 {
+  padding: 5px 0px 25px 0px;
+  background: #646469 !important;
 }
 
 /*
 animation:*/
-
 .slideDown {
   &.ng-hide {
     height: 0;
@@ -822,7 +898,89 @@ animation:*/
     overflow: hidden;
     position: relative;
   }
-  height: 141px;
+  height: 235px;
+  transition: height 0.35s ease;
+  overflow: hidden;
+  position: relative;
+  &.ng-hide-remove {
+    /* remember, the .hg-hide class is added to element
+    when the active class is added causing it to appear
+    as hidden. Therefore set the styling to display=block
+    so that the hide animation is visible */
+    display: block !important;
+  }
+  &.ng-hide-add {
+    /* remember, the .hg-hide class is added to element
+    when the active class is added causing it to appear
+    as hidden. Therefore set the styling to display=block
+    so that the hide animation is visible */
+    display: block !important;
+    animation-name: hide;
+    -webkit-animation-name: hide;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+  }
+  &.ng-hide-remove {
+    animation-name: show;
+    -webkit-animation-name: show;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+  }
+}
+
+.slideDown02 {
+  &.ng-hide {
+    height: 0;
+    transition: height 0.35s ease;
+    overflow: hidden;
+    position: relative;
+  }
+  height: 170px;
+  transition: height 0.35s ease;
+  overflow: hidden;
+  position: relative;
+  &.ng-hide-remove {
+    /* remember, the .hg-hide class is added to element
+    when the active class is added causing it to appear
+    as hidden. Therefore set the styling to display=block
+    so that the hide animation is visible */
+    display: block !important;
+  }
+  &.ng-hide-add {
+    /* remember, the .hg-hide class is added to element
+    when the active class is added causing it to appear
+    as hidden. Therefore set the styling to display=block
+    so that the hide animation is visible */
+    display: block !important;
+    animation-name: hide;
+    -webkit-animation-name: hide;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+  }
+  &.ng-hide-remove {
+    animation-name: show;
+    -webkit-animation-name: show;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+  }
+}
+
+.slideDown03 {
+  &.ng-hide {
+    height: 0;
+    transition: height 0.35s ease;
+    overflow: hidden;
+    position: relative;
+  }
+  height: 105px;
   transition: height 0.35s ease;
   overflow: hidden;
   position: relative;
@@ -870,9 +1028,7 @@ animation:*/
   }
 
 }
-
 /* estilos menu lateral */
-
 .menuPublicoMobil--bloque {
   width: auto;
   height: auto;
@@ -914,32 +1070,157 @@ animation:*/
   }
 }
 
+.menu--responsive{
+  // display: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  span {
+    padding: 10px 0px 0px 0px;
+  }
+  .button--desplegable{
+    width: 100%;
+    height: 30px;
+    padding: 0px 0px 0px 0px !important;
+    margin: 0px 0px 0px 0px !important;
+    background: transparent;
+    border: none;
+    text-align: left;
+		text-transform: uppercase;
+		font-family: 'GothamMedium';
+    &:focus{
+      outline: none;
 
-// .swiper-button-next, .swiper-button-prev {
-//     position: absolute;
-//     top: 50%;
-//     width: 27px;
-//     height: 44px;
-//     margin-top: -22px;
-//     z-index: 10;
-//     cursor: pointer;
-//     -moz-background-size: 27px 44px;
-//     -webkit-background-size: 27px 44px;
-//     background-size: 27px 44px;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     color: red !important;
-// }
-/* .swiper-button-next {
-    top: 60% !important;
-    height: 18px !important;
-    opacity: 0.5 !important;
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E") !important;
+    }
+    .responsive--menu {
+      font-size: 12px;
+      line-height: 12px;
+      text-transform: uppercase;
+      padding: 0px 0px 0px 20px;
+    }
+    span{
+      padding: 7px 10px 0px 0px;
+
+    }
+
+  }
 }
 
-.swiper-button-prev {
-  top: 60% !important;
-  height: 18px !important;
-  opacity: 0.5 !important;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E") !important;
-} */
+// estilos menu cascada
+
+.expandcollapse-item-menu {
+  overflow: hidden;
+  border-top: 1px solid #BFBFBF;
+}
+
+.expandcollapse-heading-collapsed-menu {
+  cursor: pointer;
+  padding: 5px 20px;
+  position: relative;
+  z-index: 100000000;
+  background-color: #DFDDDE;
+	color: #646469;
+}
+
+.expandcollapse-item-menu:first-of-type {
+  border-top: 0px;
+}
+
+.expandcollapse-heading-collapsed-menu p {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0px;
+}
+
+.expandcollapse-heading-expanded-menu {
+  cursor: pointer;
+  z-index: 100000000;
+  padding: 5px 20px;
+  position: relative;
+  color: #646469;
+  background-color: #ddd;
+  p {
+    font-size: 16px;
+    margin: 0px;
+  }
+}
+
+.contenedor--menuMovil{
+	background: none ;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: none;
+}
+.helperDisplay{
+	display: block !important;
+}
+
+.expandcollapse-heading-collapsed-menu > span, .expandcollapse-heading-expanded-menu > span {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  font-size: 20px;
+  line-height: 0px;
+}
+
+.expand-collapse-content-menu {
+  padding: 0px;
+}
+
+/*
+animation:*/
+
+.slideDown-menu {
+  &.ng-hide {
+    height: 0;
+    transition: height 0.35s ease;
+    overflow: hidden;
+    position: relative;
+  }
+  transition: height 0.35s ease;
+  overflow: hidden;
+  position: absolute;
+	z-index: 500;
+	width: 100%;
+	background: #fff;
+  &.ng-hide-remove {
+    /* remember, the .hg-hide class is added to element
+    when the active class is added causing it to appear
+    as hidden. Therefore set the styling to display=block
+    so that the hide animation is visible */
+    display: block !important;
+  }
+  &.ng-hide-add {
+    /* remember, the .hg-hide class is added to element
+    when the active class is added causing it to appear
+    as hidden. Therefore set the styling to display=block
+    so that the hide animation is visible */
+    display: block !important;
+    animation-name: hide;
+    -webkit-animation-name: hide;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+  }
+  &.ng-hide-remove {
+    animation-name: show;
+    -webkit-animation-name: show;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .contenedor--menuMovil{
+    display: block !important;
+  }
+  .nav--vivo{
+    display: none;
+  }
+  .nav--menuInternoUno{
+    display: none;
+  }
+}

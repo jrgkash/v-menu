@@ -1,14 +1,5 @@
 // Var app es quien inicializa la aplicacién de angular
-var myApp = angular.module('myApp', ['ngMaterial', 'ngMessages',  'ngAnimate', 'ksSwiper',]);
-
-
-// controlador menu
-// myApp.controller('menuCrtl', function($scope) {
-//
-//
-//
-// });
-
+var myApp = angular.module('myApp', [ 'ngAnimate', 'ksSwiper',]);
 
 
 myApp.controller('menuCrtl', function($scope) {
@@ -206,5 +197,10 @@ myApp.controller('slide01', function($scope, $timeout, $window) {
       },
     }
   };
+
+});
+
+myApp.controller('expandCollapseCtrlMenu', function ($scope) {
+        $scope.activeM = true;
 
 });
