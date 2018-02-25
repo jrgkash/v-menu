@@ -20,12 +20,14 @@
   background-color: #fff;
   position: relative;
   transition: all 0.3s ease;
-  z-index: 10; }
+  z-index: 10;
+  /* modificado 25-02 */ }
   .nav--vivo .vivo--menu {
-    width: 980px;
+    width: 100%;
     padding: 0;
     margin: 0 auto;
-    background: #eee; }
+    background: #eee;
+    /* fin-modificado 25-02 */ }
     .nav--vivo .vivo--menu .menu--privado {
       width: 20%;
       padding: 0px;
@@ -131,21 +133,23 @@
     .nav--vivo .vivo--menu li {
       display: inline; }
 
+/* modificado 25-02 */
 .nav--menuInternoUno {
   margin: 20px auto;
   padding: 0px 0px 0px 0px;
   height: auto;
-  width: 980px; }
+  width: 1140px; }
   .nav--menuInternoUno .menuInterno--contenedor {
     width: 100%;
     margin: 0;
     padding: 0;
     height: 65px;
-    background: #0081C9 !important; }
+    background: #0081C9 !important;
+    /* fin-modificado 25-02 */ }
     .nav--menuInternoUno .menuInterno--contenedor ks-swiper-slide {
-      width: 195px !important; }
+      width: 228px !important; }
     .nav--menuInternoUno .menuInterno--contenedor button {
-      width: 195px;
+      width: 228px;
       height: 65px;
       border: none;
       background: transparent;
@@ -223,21 +227,23 @@
     background-repeat: no-repeat;
     background-color: rgba(255, 255, 255, 0.4) !important; }
 
+/* modificado 25-02 */
 .nav--menuInternoDos {
   margin: 20px auto;
   padding: 0px 0px 0px 0px;
   height: auto;
-  width: 980px; }
+  width: 1140px; }
   .nav--menuInternoDos .menuInterno--contenedor {
     width: 100%;
     margin: 0;
     padding: 0;
     height: 65px;
-    background: #FFB718 !important; }
+    background: #FFB718 !important;
+    /* fin-modificado 25-02 */ }
     .nav--menuInternoDos .menuInterno--contenedor ks-swiper-slide {
-      width: 195px !important; }
+      width: 228px !important; }
     .nav--menuInternoDos .menuInterno--contenedor button {
-      width: 195px;
+      width: 228px;
       height: 65px;
       border: none;
       background: transparent;
@@ -293,21 +299,23 @@
       width: 50%;
       text-transform: none; }
 
+/* modificado 25-02 */
 .nav--menuInternoTres {
   margin: 20px auto;
   padding: 0px 0px 0px 0px;
   height: auto;
-  width: 980px; }
+  width: 1140px; }
   .nav--menuInternoTres .menuInterno--contenedor {
     width: 100%;
     margin: 0;
     padding: 0;
     height: 65px;
-    background: #00AE41 !important; }
+    background: #00AE41 !important;
+    /* fin-modificado 25-02 */ }
     .nav--menuInternoTres .menuInterno--contenedor ks-swiper-slide {
-      width: 195px !important; }
+      width: 228px !important; }
     .nav--menuInternoTres .menuInterno--contenedor button {
-      width: 195px;
+      width: 228px;
       height: 65px;
       border: none;
       background: transparent;
@@ -364,11 +372,13 @@
       width: 50%;
       text-transform: none; }
 
+/* modificado 25-02 */
 .nav--menuInternoCuatro {
   margin: 20px auto;
   padding: 0px 0px 0px 0px;
   height: auto;
-  width: 980px; }
+  width: 1140px;
+  /* fin-modificado 25-02 */ }
   .nav--menuInternoCuatro .menuInterno--contenedor {
     width: 100%;
     margin: 0;
@@ -434,11 +444,13 @@
       width: 50%;
       text-transform: none; }
 
+/* modificado 25-02 */
 .nav--menuInternoCinco {
   margin: 20px auto;
   padding: 0px 0px 0px 0px;
   height: auto;
-  width: 980px; }
+  width: 1140px;
+  /* fin-modificado 25-02 */ }
   .nav--menuInternoCinco .menuInterno--contenedor {
     width: 100%;
     margin: 0;
@@ -766,16 +778,6 @@ animation:*/
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out; }
 
-.h--boton {
-  width: 325px !important; }
-  .h--boton button {
-    width: 325px !important; }
-
-.h--boton--6 {
-  width: 162px !important; }
-  .h--boton--6 button {
-    width: 162px !important; }
-
 /* estilos menu lateral */
 .menuPublicoMobil--bloque {
   width: auto;
@@ -919,6 +921,20 @@ animation:*/
     animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out; }
 
+/* modificado 25-02 */
+.h--boton {
+  width: 380px !important; }
+  .h--boton button {
+    width: 380px !important; }
+
+/* fin-modificado 25-02 */
+/* modificado 25-02 */
+.h--boton--6 {
+  width: 228px !important; }
+  .h--boton--6 button {
+    width: 228px !important; }
+
+/* fin-modificado 25-02 */
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .contenedor--menuMovil {
     display: block !important; }
@@ -927,6 +943,96 @@ animation:*/
     display: none; }
 
   .nav--menuInternoUno {
+    display: none; }
+
+  .nav--menuInternoDos {
+    display: none; }
+
+  .nav--menuInternoTres {
+    display: none; }
+
+  .nav--menuInternoCuatro {
+    display: none; }
+
+  .nav--menuInternoCinco {
     display: none; } }
+/* modificado-nuevo 25-02 */
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  .nav--menuInternoUno {
+    width: 720px !important; }
+    .nav--menuInternoUno ks-swiper-slide {
+      width: 144px !important; }
+    .nav--menuInternoUno button {
+      width: 144px !important; }
+
+  .h--boton--6 {
+    width: 144px !important; }
+    .h--boton--6 button {
+      width: 144px !important; }
+
+  .nav--menuInternoDos {
+    width: 720px !important; }
+    .nav--menuInternoDos ks-swiper-slide {
+      width: 144px !important; }
+    .nav--menuInternoDos button {
+      width: 144px !important; }
+
+  .nav--menuInternoTres {
+    width: 720px !important; }
+    .nav--menuInternoTres ks-swiper-slide {
+      width: 144px !important; }
+    .nav--menuInternoTres button {
+      width: 144px !important; }
+
+  .nav--menuInternoCuatro {
+    width: 720px !important; }
+
+  .nav--menuInternoCinco {
+    width: 720px !important; }
+
+  .h--boton {
+    width: 240px !important; }
+    .h--boton button {
+      width: 240px !important; } }
+/* fin-modificado-nuevo 25-02 */
+/* modificado-nuevo 25-02 */
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+  .nav--menuInternoUno {
+    width: 940px !important; }
+    .nav--menuInternoUno ks-swiper-slide {
+      width: 188px !important; }
+    .nav--menuInternoUno button {
+      width: 188px !important; }
+
+  .h--boton--6 {
+    width: 188px !important; }
+    .h--boton--6 button {
+      width: 188px !important; }
+
+  .nav--menuInternoDos {
+    width: 940px !important; }
+    .nav--menuInternoDos ks-swiper-slide {
+      width: 188px !important; }
+    .nav--menuInternoDos button {
+      width: 188px !important; }
+
+  .nav--menuInternoTres {
+    width: 940px !important; }
+    .nav--menuInternoTres ks-swiper-slide {
+      width: 188px !important; }
+    .nav--menuInternoTres button {
+      width: 188px !important; }
+
+  .nav--menuInternoCuatro {
+    width: 940px !important; }
+
+  .nav--menuInternoCinco {
+    width: 940px !important; }
+
+  .h--boton {
+    width: 320px !important; }
+    .h--boton button {
+      width: 320px !important; } }
+/* fin-modificado-nuevo 25-02 */
 
 /*# sourceMappingURL=main-header.css.map */

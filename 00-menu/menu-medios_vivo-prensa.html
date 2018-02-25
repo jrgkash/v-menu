@@ -26,32 +26,30 @@
   <script src="./assets/js/scrolling-nav.js"></script>
   <!-- este archivo contiene la navegacion -->
 </head>
-
 <body ng-app="myApp">
   <header>
-    <nav  >
+    <nav>
     </nav>
-    <!--   menu logeado -->
+
     <nav class="nav--vivo">
-      <div class="container" >
+      <div class="container">
         <div class="vivo--menu" ng-controller="menuCrtl">
           <!-- mega menu -->
           <ul>
             <li class="menu--privado">
-              <button  ng-class="{'active': isActive}" ng-click="
+              <button ng-class="{'active': isActive}" ng-click="
                 activeButton();
                 isActive2= null;
                 isActive3= null;
                 isActive4= null;
-                isActive5= null;"
-                type="button">
+                isActive5= null;" type="button">
                 <p>Nuestra <span>cultura</span></p>
                 <span class="glyphicon glyphicon-one-fine-dot"></span>
               </button>
 
             </li>
-            <li  class="menu--privado">
-              <button   ng-class="{'active': isActive2}" ng-click="
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive2}" ng-click="
                 activeButton2();
                 isActive= null;
                 isActive3= null;
@@ -63,7 +61,7 @@
 
             </li>
             <li class="menu--privado">
-              <button  ng-class="{'active': isActive3}" ng-click="
+              <button ng-class="{'active': isActive3}" ng-click="
                 activeButton3();
                 isActive= null;
                 isActive2= null;
@@ -76,7 +74,7 @@
 
             </li>
             <li class="menu--privado">
-              <button  ng-class="{'active': isActive4}" ng-click="
+              <button ng-class="{'active': isActive4}" ng-click="
                 activeButton4();
                 isActive= null;
                 isActive2= null;
@@ -108,48 +106,29 @@
     <div class="container ">
       <div class="nav--menuInternoCinco ng-cloak">
         <div class="menuInterno--contenedor">
-          <ks-swiper-container  initial-slide="0" loop="false" show-nav-buttons="false" slides-per-view="5" space-between="0" pagination-clickable="false">
-              <ks-swiper-slide class="swiper-slide activo  h--boton ">
-                <button>
+          <ks-swiper-container initial-slide="0" loop="false" show-nav-buttons="false" slides-per-view="5" space-between="0" pagination-clickable="false">
+            <ks-swiper-slide class="swiper-slide activo  h--boton ">
+              <button>
                   <p>Vivo Prensa</p>
                     <span class="glyphicon glyphicon-one-fine-dot"></span>
                 </button>
-              </ks-swiper-slide>
-              <ks-swiper-slide class="swiper-slide  h--boton ">
-                <button>
+            </ks-swiper-slide>
+            <ks-swiper-slide class="swiper-slide  h--boton ">
+              <button>
                   <p>Campañas de Marketing</p>
                   <span class="glyphicon glyphicon-one-fine-dot"></span>
                 </button>
-              </ks-swiper-slide>
-              <ks-swiper-slide class="swiper-slide  h--boton ">
-                <button>
+            </ks-swiper-slide>
+            <ks-swiper-slide class="swiper-slide  h--boton ">
+              <button>
                   <p>Próximas Aperturas</p>
                 </button>
-              </ks-swiper-slide>
-
-
-
+            </ks-swiper-slide>
           </ks-swiper-container>
         </div>
       </div>
     </div>
-
   </header>
-
-
-  <section>
-
-
-
-  </section>
-
-
-
-
-
-
-
-
 </body>
 
 </html>
