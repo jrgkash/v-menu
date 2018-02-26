@@ -28,10 +28,7 @@
 </head>
 
 <body ng-app="myApp">
-  <header>
-    <nav  >
-    </nav>
-    
+  <header class="ng-cloak">
     <nav class="nav--vivo">
       <div class="container"   >
         <div class="vivo--menu" ng-controller="menuCrtl">
@@ -154,20 +151,1247 @@
         </div>
       </div>
     </div>
-
   </header>
+  <header class="ng-cloak">
+    <nav class="nav--vivo">
+      <div class="container"   >
+        <div class="vivo--menu" ng-controller="menuCrtl">
+          <!-- mega menu -->
+          <ul>
+            <li class="menu--privado">
+              <button class="active--menuAzul" ng-class="{'active': isActive}" ng-click="
+                activeButton();
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;"
+                type="button">
+                <p>Nuestra <span>cultura</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
 
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive2}" ng-click="
+                activeButton2();
+                isActive= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>gestión de <span>personas</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
 
-  <section>
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive3}" ng-click="
+                activeButton3();
+                isActive= null;
+                isActive2= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>beneficios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
 
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive4}" ng-click="
+                activeButton4();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive5= null;" type="button">
+                <p>biblioteca</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
 
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive5}" ng-click="
+                activeButton5();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;" type="button">
+                <p>Medios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container ">
+      <div class="nav--menuInternoUno ng-cloak">
+        <div class="menuInterno--contenedor">
+          <ks-swiper-container  initial-slide="0" loop="false" show-nav-buttons="true" slides-per-view="6" space-between="0" pagination-clickable="false">
+              <ks-swiper-slide class="swiper-slide activo h--boton--6">
+                <button>
+                  <p>Quienes somos </p>
+                    <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Valores Corporativos</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>GPTW</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Galería</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Noticias</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Organigramas</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Centros Comerciales</p>
+                </button>
+              </ks-swiper-slide>
+          </ks-swiper-container>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="ng-cloak">
+    <nav class="nav--vivo">
+      <div class="container"   >
+        <div class="vivo--menu" ng-controller="menuCrtl">
+          <!-- mega menu -->
+          <ul>
+            <li class="menu--privado">
+              <button class="active--menuAzul" ng-class="{'active': isActive}" ng-click="
+                activeButton();
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;"
+                type="button">
+                <p>Nuestra <span>cultura</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
 
-  </section>
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive2}" ng-click="
+                activeButton2();
+                isActive= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>gestión de <span>personas</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
 
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive3}" ng-click="
+                activeButton3();
+                isActive= null;
+                isActive2= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>beneficios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
 
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive4}" ng-click="
+                activeButton4();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive5= null;" type="button">
+                <p>biblioteca</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
 
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive5}" ng-click="
+                activeButton5();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;" type="button">
+                <p>Medios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container ">
+      <div class="nav--menuInternoUno ng-cloak">
+        <div class="menuInterno--contenedor">
+          <ks-swiper-container  initial-slide="0" loop="false" show-nav-buttons="true" slides-per-view="6" space-between="0" pagination-clickable="false">
+              <ks-swiper-slide class="swiper-slide activo h--boton--6">
+                <button>
+                  <p>Quienes somos </p>
+                    <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Valores Corporativos</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>GPTW</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Galería</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Noticias</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Organigramas</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Centros Comerciales</p>
+                </button>
+              </ks-swiper-slide>
+          </ks-swiper-container>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="ng-cloak">
+    <nav class="nav--vivo">
+      <div class="container"   >
+        <div class="vivo--menu" ng-controller="menuCrtl">
+          <!-- mega menu -->
+          <ul>
+            <li class="menu--privado">
+              <button class="active--menuAzul" ng-class="{'active': isActive}" ng-click="
+                activeButton();
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;"
+                type="button">
+                <p>Nuestra <span>cultura</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
 
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive2}" ng-click="
+                activeButton2();
+                isActive= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>gestión de <span>personas</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
 
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive3}" ng-click="
+                activeButton3();
+                isActive= null;
+                isActive2= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>beneficios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive4}" ng-click="
+                activeButton4();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive5= null;" type="button">
+                <p>biblioteca</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive5}" ng-click="
+                activeButton5();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;" type="button">
+                <p>Medios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container ">
+      <div class="nav--menuInternoUno ng-cloak">
+        <div class="menuInterno--contenedor">
+          <ks-swiper-container  initial-slide="0" loop="false" show-nav-buttons="true" slides-per-view="6" space-between="0" pagination-clickable="false">
+              <ks-swiper-slide class="swiper-slide activo h--boton--6">
+                <button>
+                  <p>Quienes somos </p>
+                    <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Valores Corporativos</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>GPTW</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Galería</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Noticias</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Organigramas</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Centros Comerciales</p>
+                </button>
+              </ks-swiper-slide>
+          </ks-swiper-container>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="ng-cloak">
+    <nav class="nav--vivo">
+      <div class="container"   >
+        <div class="vivo--menu" ng-controller="menuCrtl">
+          <!-- mega menu -->
+          <ul>
+            <li class="menu--privado">
+              <button class="active--menuAzul" ng-class="{'active': isActive}" ng-click="
+                activeButton();
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;"
+                type="button">
+                <p>Nuestra <span>cultura</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive2}" ng-click="
+                activeButton2();
+                isActive= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>gestión de <span>personas</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive3}" ng-click="
+                activeButton3();
+                isActive= null;
+                isActive2= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>beneficios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive4}" ng-click="
+                activeButton4();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive5= null;" type="button">
+                <p>biblioteca</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive5}" ng-click="
+                activeButton5();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;" type="button">
+                <p>Medios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container ">
+      <div class="nav--menuInternoUno ng-cloak">
+        <div class="menuInterno--contenedor">
+          <ks-swiper-container  initial-slide="0" loop="false" show-nav-buttons="true" slides-per-view="6" space-between="0" pagination-clickable="false">
+              <ks-swiper-slide class="swiper-slide activo h--boton--6">
+                <button>
+                  <p>Quienes somos </p>
+                    <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Valores Corporativos</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>GPTW</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Galería</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Noticias</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Organigramas</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Centros Comerciales</p>
+                </button>
+              </ks-swiper-slide>
+          </ks-swiper-container>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="ng-cloak">
+    <nav class="nav--vivo">
+      <div class="container"   >
+        <div class="vivo--menu" ng-controller="menuCrtl">
+          <!-- mega menu -->
+          <ul>
+            <li class="menu--privado">
+              <button class="active--menuAzul" ng-class="{'active': isActive}" ng-click="
+                activeButton();
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;"
+                type="button">
+                <p>Nuestra <span>cultura</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive2}" ng-click="
+                activeButton2();
+                isActive= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>gestión de <span>personas</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive3}" ng-click="
+                activeButton3();
+                isActive= null;
+                isActive2= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>beneficios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive4}" ng-click="
+                activeButton4();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive5= null;" type="button">
+                <p>biblioteca</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive5}" ng-click="
+                activeButton5();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;" type="button">
+                <p>Medios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container ">
+      <div class="nav--menuInternoUno ng-cloak">
+        <div class="menuInterno--contenedor">
+          <ks-swiper-container  initial-slide="0" loop="false" show-nav-buttons="true" slides-per-view="6" space-between="0" pagination-clickable="false">
+              <ks-swiper-slide class="swiper-slide activo h--boton--6">
+                <button>
+                  <p>Quienes somos </p>
+                    <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Valores Corporativos</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>GPTW</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Galería</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Noticias</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Organigramas</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Centros Comerciales</p>
+                </button>
+              </ks-swiper-slide>
+          </ks-swiper-container>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="ng-cloak">
+    <nav class="nav--vivo">
+      <div class="container"   >
+        <div class="vivo--menu" ng-controller="menuCrtl">
+          <!-- mega menu -->
+          <ul>
+            <li class="menu--privado">
+              <button class="active--menuAzul" ng-class="{'active': isActive}" ng-click="
+                activeButton();
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;"
+                type="button">
+                <p>Nuestra <span>cultura</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive2}" ng-click="
+                activeButton2();
+                isActive= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>gestión de <span>personas</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive3}" ng-click="
+                activeButton3();
+                isActive= null;
+                isActive2= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>beneficios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive4}" ng-click="
+                activeButton4();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive5= null;" type="button">
+                <p>biblioteca</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive5}" ng-click="
+                activeButton5();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;" type="button">
+                <p>Medios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container ">
+      <div class="nav--menuInternoUno ng-cloak">
+        <div class="menuInterno--contenedor">
+          <ks-swiper-container  initial-slide="0" loop="false" show-nav-buttons="true" slides-per-view="6" space-between="0" pagination-clickable="false">
+              <ks-swiper-slide class="swiper-slide activo h--boton--6">
+                <button>
+                  <p>Quienes somos </p>
+                    <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Valores Corporativos</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>GPTW</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Galería</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Noticias</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Organigramas</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Centros Comerciales</p>
+                </button>
+              </ks-swiper-slide>
+          </ks-swiper-container>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="ng-cloak">
+    <nav class="nav--vivo">
+      <div class="container"   >
+        <div class="vivo--menu" ng-controller="menuCrtl">
+          <!-- mega menu -->
+          <ul>
+            <li class="menu--privado">
+              <button class="active--menuAzul" ng-class="{'active': isActive}" ng-click="
+                activeButton();
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;"
+                type="button">
+                <p>Nuestra <span>cultura</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive2}" ng-click="
+                activeButton2();
+                isActive= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>gestión de <span>personas</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive3}" ng-click="
+                activeButton3();
+                isActive= null;
+                isActive2= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>beneficios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive4}" ng-click="
+                activeButton4();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive5= null;" type="button">
+                <p>biblioteca</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive5}" ng-click="
+                activeButton5();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;" type="button">
+                <p>Medios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container ">
+      <div class="nav--menuInternoUno ng-cloak">
+        <div class="menuInterno--contenedor">
+          <ks-swiper-container  initial-slide="0" loop="false" show-nav-buttons="true" slides-per-view="6" space-between="0" pagination-clickable="false">
+              <ks-swiper-slide class="swiper-slide activo h--boton--6">
+                <button>
+                  <p>Quienes somos </p>
+                    <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Valores Corporativos</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>GPTW</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Galería</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Noticias</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Organigramas</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Centros Comerciales</p>
+                </button>
+              </ks-swiper-slide>
+          </ks-swiper-container>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="ng-cloak">
+    <nav class="nav--vivo">
+      <div class="container"   >
+        <div class="vivo--menu" ng-controller="menuCrtl">
+          <!-- mega menu -->
+          <ul>
+            <li class="menu--privado">
+              <button class="active--menuAzul" ng-class="{'active': isActive}" ng-click="
+                activeButton();
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;"
+                type="button">
+                <p>Nuestra <span>cultura</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive2}" ng-click="
+                activeButton2();
+                isActive= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>gestión de <span>personas</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive3}" ng-click="
+                activeButton3();
+                isActive= null;
+                isActive2= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>beneficios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive4}" ng-click="
+                activeButton4();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive5= null;" type="button">
+                <p>biblioteca</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive5}" ng-click="
+                activeButton5();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;" type="button">
+                <p>Medios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container ">
+      <div class="nav--menuInternoUno ng-cloak">
+        <div class="menuInterno--contenedor">
+          <ks-swiper-container  initial-slide="0" loop="false" show-nav-buttons="true" slides-per-view="6" space-between="0" pagination-clickable="false">
+              <ks-swiper-slide class="swiper-slide activo h--boton--6">
+                <button>
+                  <p>Quienes somos </p>
+                    <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Valores Corporativos</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>GPTW</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Galería</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Noticias</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Organigramas</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Centros Comerciales</p>
+                </button>
+              </ks-swiper-slide>
+          </ks-swiper-container>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="ng-cloak">
+    <nav class="nav--vivo">
+      <div class="container"   >
+        <div class="vivo--menu" ng-controller="menuCrtl">
+          <!-- mega menu -->
+          <ul>
+            <li class="menu--privado">
+              <button class="active--menuAzul" ng-class="{'active': isActive}" ng-click="
+                activeButton();
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;"
+                type="button">
+                <p>Nuestra <span>cultura</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive2}" ng-click="
+                activeButton2();
+                isActive= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>gestión de <span>personas</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive3}" ng-click="
+                activeButton3();
+                isActive= null;
+                isActive2= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>beneficios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive4}" ng-click="
+                activeButton4();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive5= null;" type="button">
+                <p>biblioteca</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive5}" ng-click="
+                activeButton5();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;" type="button">
+                <p>Medios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container ">
+      <div class="nav--menuInternoUno ng-cloak">
+        <div class="menuInterno--contenedor">
+          <ks-swiper-container  initial-slide="0" loop="false" show-nav-buttons="true" slides-per-view="6" space-between="0" pagination-clickable="false">
+              <ks-swiper-slide class="swiper-slide activo h--boton--6">
+                <button>
+                  <p>Quienes somos </p>
+                    <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Valores Corporativos</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>GPTW</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Galería</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Noticias</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Organigramas</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Centros Comerciales</p>
+                </button>
+              </ks-swiper-slide>
+          </ks-swiper-container>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="ng-cloak">
+    <nav class="nav--vivo">
+      <div class="container"   >
+        <div class="vivo--menu" ng-controller="menuCrtl">
+          <!-- mega menu -->
+          <ul>
+            <li class="menu--privado">
+              <button class="active--menuAzul" ng-class="{'active': isActive}" ng-click="
+                activeButton();
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;"
+                type="button">
+                <p>Nuestra <span>cultura</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive2}" ng-click="
+                activeButton2();
+                isActive= null;
+                isActive3= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>gestión de <span>personas</span></p>
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive3}" ng-click="
+                activeButton3();
+                isActive= null;
+                isActive2= null;
+                isActive4= null;
+                isActive5= null;" type="button">
+                <p>beneficios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive4}" ng-click="
+                activeButton4();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive5= null;" type="button">
+                <p>biblioteca</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+
+            </li>
+            <li class="menu--privado">
+              <button ng-class="{'active': isActive5}" ng-click="
+                activeButton5();
+                isActive= null;
+                isActive2= null;
+                isActive3= null;
+                isActive4= null;" type="button">
+                <p>Medios</p>
+                <!-- <h3>test</h3> -->
+                <span class="glyphicon glyphicon-one-fine-dot"></span>
+              </button>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container ">
+      <div class="nav--menuInternoUno ng-cloak">
+        <div class="menuInterno--contenedor">
+          <ks-swiper-container  initial-slide="0" loop="false" show-nav-buttons="true" slides-per-view="6" space-between="0" pagination-clickable="false">
+              <ks-swiper-slide class="swiper-slide activo h--boton--6">
+                <button>
+                  <p>Quienes somos </p>
+                    <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Valores Corporativos</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>GPTW</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Galería</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Noticias</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Organigramas</p>
+                  <span class="glyphicon glyphicon-one-fine-dot"></span>
+                </button>
+              </ks-swiper-slide>
+              <ks-swiper-slide class="swiper-slide h--boton--6">
+                <button>
+                  <p>Centros Comerciales</p>
+                </button>
+              </ks-swiper-slide>
+          </ks-swiper-container>
+        </div>
+      </div>
+    </div>
+  </header>
 
 
 
