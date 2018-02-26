@@ -1,36 +1,36 @@
 /* nuevo header */
 
 /*tipografías*/
-@font-face {
-	font-family: 'GothamBold';
-    src: url('assets/fonts/original_Gotham-Bold.eot?#iefix') format('embedded-opentype'),
-         url('assets/fonts/original_Gotham-Bold.woff') format('woff'),
-         url('assets/fonts/original_Gotham-Bold.ttf') format('truetype'),
-         url('assets/fonts/original_Gotham-Bold.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-
-@font-face {
-	font-family: 'GothamBook';
-    src: url('assets/fonts/original_Gotham-Book.eot?#iefix') format('embedded-opentype'),
-         url('assets/fonts/original_Gotham-Book.woff') format('woff'),
-         url('assets/fonts/original_Gotham-Book.ttf') format('truetype'),
-         url('assets/fonts/original_Gotham-Book.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'GothamMedium';
-    src: url('assets/fonts/original_Gotham-Medium.eot?#iefix') format('embedded-opentype'),
-         url('assets/fonts/original_Gotham-Medium.woff') format('woff'),
-         url('assets/fonts/original_Gotham-Medium.ttf') format('truetype'),
-         url('assets/fonts/original_Gotham-Medium.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+// @font-face {
+// 	font-family: 'GothamBold';
+//     src: url('assets/fonts/original_Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+//          url('assets/fonts/original_Gotham-Bold.woff') format('woff'),
+//          url('assets/fonts/original_Gotham-Bold.ttf') format('truetype'),
+//          url('assets/fonts/original_Gotham-Bold.svg') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+//
+//
+// @font-face {
+// 	font-family: 'GothamBook';
+//     src: url('assets/fonts/original_Gotham-Book.eot?#iefix') format('embedded-opentype'),
+//          url('assets/fonts/original_Gotham-Book.woff') format('woff'),
+//          url('assets/fonts/original_Gotham-Book.ttf') format('truetype'),
+//          url('assets/fonts/original_Gotham-Book.svg') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+//
+// @font-face {
+// 	font-family: 'GothamMedium';
+//     src: url('assets/fonts/original_Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+//          url('assets/fonts/original_Gotham-Medium.woff') format('woff'),
+//          url('assets/fonts/original_Gotham-Medium.ttf') format('truetype'),
+//          url('assets/fonts/original_Gotham-Medium.svg') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
 
 .nav--vivo{
   background-color: #fff;
@@ -59,7 +59,8 @@
         border-right: none;
         border-top: none;
         color: #666;
-        font-family: 'GothamMedium';
+
+        font-family: 'GothamBook';
         &:focus{
           outline: none;
 
@@ -91,13 +92,6 @@
         border-bottom: 4px solid #646469   !important;
         padding: 0px 0px 8px 0px !important;
       }
-
-
-
-
-
-
-
       p{
         font-size: 1em;
         line-height: 1em;
@@ -105,15 +99,16 @@
         padding: 4px 0px 0px 0px;
         margin: 0px auto;
         width: 50%;
-        font-family: 'GothamMedium';
+        font-weight: 300;
+        // font-family: 'GothamMedium';
         span{
           font-size: 1.1252em;
           line-height: 1.1252em;
           text-transform: uppercase;
-            padding: 0px 0px 0px 0px;
-            margin: 0px;
-            font-weight: 600;
-            font-family: 'GothamBold';
+          padding: 0px 0px 0px 0px;
+          margin: 0px;
+          font-weight: 500;
+          font-family: 'GothamMedium';
         }
 
       }
@@ -229,7 +224,7 @@
       padding: 0px 0px 10px 0px !important;
       margin: 0px 0px 0px 0px !important;
       float: left;
-      font-family: 'GothamMedium';
+      font-family: 'GothamBook';
       font-size: 12px;
       &:focus{
         outline: none;
@@ -241,7 +236,7 @@
         padding: 0px 0px 6px 0px !important;
         p{
             color: #fff !important;
-            font-family: 'GothamMedium';
+            font-family: 'GothamBook';
         }
       }
       .glyphicon.glyphicon-one-fine-dot {
@@ -345,7 +340,7 @@
       padding: 0px 0px 10px 0px !important;
       margin: 0px 0px 0px 0px !important;
       float: left;
-      font-family: 'GothamMedium';
+      font-family: 'GothamBook';
       font-size: 12px;
       &:focus{
         outline: none;
@@ -357,7 +352,7 @@
         padding: 0px 0px 6px 0px !important;
         p{
             color: #fff !important;
-            font-family: 'GothamMedium';
+            font-family: 'GothamBook';
         }
       }
       .glyphicon.glyphicon-one-fine-dot {
@@ -433,7 +428,7 @@
       padding: 0px 0px 10px 0px !important;
       margin: 0px 0px 0px 0px !important;
       float: left;
-      font-family: 'GothamMedium';
+      font-family: 'GothamBook';
       font-size: 12px;
       &:focus{
         outline: none;
@@ -445,7 +440,7 @@
         padding: 0px 0px 6px 0px !important;
         p{
             color: #fff !important;
-            font-family: 'GothamMedium';
+            font-family: 'GothamBook';
         }
       }
       .glyphicon.glyphicon-one-fine-dot {
@@ -477,7 +472,7 @@
       }
       p{
           color: #fff !important;
-          font-family: 'GothamMedium';
+          font-family: 'GothamBook';
 
       }
     }
@@ -525,7 +520,7 @@
       padding: 0px 0px 10px 0px !important;
       margin: 0px 0px 0px 0px !important;
       float: left;
-      font-family: 'GothamMedium';
+      font-family: 'GothamBook';
       font-size: 12px;
       &:focus{
         outline: none;
@@ -535,7 +530,7 @@
         color: #fff !important;
         border-bottom: 4px solid rgba(255, 255, 255, .5) !important;
         padding: 0px 0px 6px 0px !important;
-        font-family: 'GothamMedium';
+        font-family: 'GothamBook';
         p{
             color: #fff !important;
         }
@@ -614,7 +609,7 @@
       padding: 0px 0px 10px 0px !important;
       margin: 0px 0px 0px 0px !important;
       float: left;
-      font-family: 'GothamMedium';
+      font-family: 'GothamBook';
       font-size: 12px;
       &:focus{
         outline: none;
@@ -1211,9 +1206,9 @@ animation:*/
 // helpers menu
 /* modificado 25-02 */
 .h--boton{
-  width: 380px !important;
+  width: 390px !important;
   button{
-    width: 380px !important;
+    width: 390px !important;
   }
 
 }
