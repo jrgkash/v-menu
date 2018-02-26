@@ -1,21 +1,6 @@
 @charset "UTF-8";
 /* nuevo header */
 /*tipografías*/
-@font-face {
-  font-family: 'GothamBold';
-  src: url("assets/fonts/original_Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/original_Gotham-Bold.woff") format("woff"), url("assets/fonts/original_Gotham-Bold.ttf") format("truetype"), url("assets/fonts/original_Gotham-Bold.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'GothamBook';
-  src: url("assets/fonts/original_Gotham-Book.eot?#iefix") format("embedded-opentype"), url("assets/fonts/original_Gotham-Book.woff") format("woff"), url("assets/fonts/original_Gotham-Book.ttf") format("truetype"), url("assets/fonts/original_Gotham-Book.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'GothamMedium';
-  src: url("assets/fonts/original_Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/original_Gotham-Medium.woff") format("woff"), url("assets/fonts/original_Gotham-Medium.ttf") format("truetype"), url("assets/fonts/original_Gotham-Medium.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 .nav--vivo {
   background-color: #fff;
   position: relative;
@@ -43,7 +28,7 @@
         border-right: none;
         border-top: none;
         color: #666;
-        font-family: 'GothamMedium'; }
+        font-family: 'GothamBook'; }
         .nav--vivo .vivo--menu .menu--privado button:focus {
           outline: none; }
       .nav--vivo .vivo--menu .menu--privado .active {
@@ -70,8 +55,7 @@
         text-transform: uppercase;
         padding: 4px 0px 0px 0px;
         margin: 0px auto;
-        width: 50%;
-        font-family: 'GothamMedium'; }
+        width: 50%; }
         .nav--vivo .vivo--menu .menu--privado p span {
           font-size: 1.1252em;
           line-height: 1.1252em;
@@ -79,7 +63,7 @@
           padding: 0px 0px 0px 0px;
           margin: 0px;
           font-weight: 600;
-          font-family: 'GothamBold'; }
+          font-family: 'GothamMedium'; }
       .nav--vivo .vivo--menu .menu--privado h3 {
         font-size: 1.1252em;
         line-height: 1.1252em;
@@ -157,8 +141,8 @@
       padding: 0px 0px 10px 0px !important;
       margin: 0px 0px 0px 0px !important;
       float: left;
-      font-family: 'GothamMedium';
-      font-size: 12px; }
+      font-family: 'GothamBook';
+      font-size: 13px; }
       .nav--menuInternoUno .menuInterno--contenedor button:focus {
         outline: none; }
       .nav--menuInternoUno .menuInterno--contenedor button:hover {
@@ -168,7 +152,7 @@
         padding: 0px 0px 6px 0px !important; }
         .nav--menuInternoUno .menuInterno--contenedor button:hover p {
           color: #fff !important;
-          font-family: 'GothamMedium'; }
+          font-family: 'GothamBook'; }
       .nav--menuInternoUno .menuInterno--contenedor button .glyphicon.glyphicon-one-fine-dot {
         position: absolute;
         margin: 0;
@@ -251,8 +235,8 @@
       padding: 0px 0px 10px 0px !important;
       margin: 0px 0px 0px 0px !important;
       float: left;
-      font-family: 'GothamMedium';
-      font-size: 12px; }
+      font-family: 'GothamBook';
+      font-size: 13px; }
       .nav--menuInternoDos .menuInterno--contenedor button:focus {
         outline: none; }
       .nav--menuInternoDos .menuInterno--contenedor button:hover {
@@ -262,7 +246,7 @@
         padding: 0px 0px 6px 0px !important; }
         .nav--menuInternoDos .menuInterno--contenedor button:hover p {
           color: #fff !important;
-          font-family: 'GothamMedium'; }
+          font-family: 'GothamBook'; }
       .nav--menuInternoDos .menuInterno--contenedor button .glyphicon.glyphicon-one-fine-dot {
         position: absolute;
         margin: 0;
@@ -323,8 +307,8 @@
       padding: 0px 0px 10px 0px !important;
       margin: 0px 0px 0px 0px !important;
       float: left;
-      font-family: 'GothamMedium';
-      font-size: 12px; }
+      font-family: 'GothamBook';
+      font-size: 13px; }
       .nav--menuInternoTres .menuInterno--contenedor button:focus {
         outline: none; }
       .nav--menuInternoTres .menuInterno--contenedor button:hover {
@@ -334,7 +318,7 @@
         padding: 0px 0px 6px 0px !important; }
         .nav--menuInternoTres .menuInterno--contenedor button:hover p {
           color: #fff !important;
-          font-family: 'GothamMedium'; }
+          font-family: 'GothamBook'; }
       .nav--menuInternoTres .menuInterno--contenedor button .glyphicon.glyphicon-one-fine-dot {
         position: absolute;
         margin: 0;
@@ -357,7 +341,7 @@
         padding: 0px 0px 6px 0px !important; }
       .nav--menuInternoTres .menuInterno--contenedor .activo p {
         color: #fff !important;
-        font-family: 'GothamMedium'; }
+        font-family: 'Gothambook'; }
     .nav--menuInternoTres .menuInterno--contenedor .activo-select {
       width: 195px;
       position: absolute;
@@ -396,8 +380,8 @@
       padding: 0px 0px 10px 0px !important;
       margin: 0px 0px 0px 0px !important;
       float: left;
-      font-family: 'GothamMedium';
-      font-size: 12px; }
+      font-family: 'GothamBook';
+      font-size: 13px; }
       .nav--menuInternoCuatro .menuInterno--contenedor button:focus {
         outline: none; }
       .nav--menuInternoCuatro .menuInterno--contenedor button:hover {
@@ -405,7 +389,7 @@
         color: #fff !important;
         border-bottom: 4px solid rgba(255, 255, 255, 0.5) !important;
         padding: 0px 0px 6px 0px !important;
-        font-family: 'GothamMedium'; }
+        font-family: 'GothamBook'; }
         .nav--menuInternoCuatro .menuInterno--contenedor button:hover p {
           color: #fff !important; }
       .nav--menuInternoCuatro .menuInterno--contenedor button .glyphicon.glyphicon-one-fine-dot {
@@ -468,8 +452,8 @@
       padding: 0px 0px 10px 0px !important;
       margin: 0px 0px 0px 0px !important;
       float: left;
-      font-family: 'GothamMedium';
-      font-size: 12px; }
+      font-family: 'GothamBook';
+      font-size: 13px; }
       .nav--menuInternoCinco .menuInterno--contenedor button:focus {
         outline: none; }
       .nav--menuInternoCinco .menuInterno--contenedor button:hover {
@@ -550,7 +534,7 @@
         padding: 0px 0px 10px 0px !important;
         margin: 0px 0px 0px 0px !important;
         float: left;
-        font-family: 'GothamMedium'; }
+        font-family: 'GothamBook'; }
         .nav--menuInterno .menuInterno--contenedor .conenedor--nav button:focus {
           outline: none; }
         .nav--menuInterno .menuInterno--contenedor .conenedor--nav button:hover {
