@@ -873,7 +873,9 @@ animation:*/
   position: absolute;
   z-index: 500;
   width: 100%;
-  background: #fff; }
+  background: none;
+  height: 465px;
+  position: inherit; }
   .slideDown-menu.ng-hide {
     height: 0;
     transition: height 0.35s ease;
